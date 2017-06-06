@@ -84,18 +84,11 @@ def drawSample(name, tt):
         opacity = 0.8+0.2*random() # Not totally opaque.
         if color:
             c = choice((
-                (1, 1, 1, 1),
-                (1, 1, 1, 1),
-                (1, 1, 1, 1),
-                (1, 0.4*0.1*random(), 1, opacity),
-                (0.8+0.2*random(), 0.9, 0.9, opacity),
-                (0.8+0.2*random(), 0.5, 1, opacity),
-                (1, 0.5*random(), 0.5*random(), opacity),
-                (1, 0.5*random(), random(), opacity),
-                (1, 0, random(), opacity),
-                (0.3, 0.2, 0.5*random(), opacity),
-                (random(), 0.5, 0, opacity),
-                (0.5, 0.3*random(), 1, opacity)
+                (0.5, 0.9*0.1*random(), 1, opacity),
+                (0.9*0.1*random(), 1, 1, opacity),
+                (0.9*0.1*random(), 0.5, 1, opacity),
+                (1, 1, 0.9*0.1*random(), opacity),                      
+                (0.6, 1, 0.9*0.1*random(), opacity),
             ))
         else:
             r = g = b = random()*0.8
