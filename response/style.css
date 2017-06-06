@@ -991,7 +991,7 @@ a.nivo-nextNav{
   position: relative;
   -webkit-transform: none;
   -moz-transform: none;
-  -ms-transform: none;
+  -ms-transform: none
   -o-transform: none;
   transform: none;
 }
@@ -1013,7 +1013,8 @@ a.nivo-nextNav{
 	border:2px solid #167FFF;
 	transition: 0.5s;
 	color: #167FFF;	
-	font-size: 30px;
+	font-size: 22px;
+	font-family: BitcountMonoDoubleCircle;
 }
 
 .single_service:hover .service_icon{
