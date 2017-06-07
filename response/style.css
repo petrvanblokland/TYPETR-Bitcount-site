@@ -111,17 +111,16 @@ div#css_sample {
 }
 #selectSingle {
 	border: 1px solid #0000FF;;
-	padding: 2px 2px 2px 3px;
+	padding: 2px 2px 1px 3px;
 }
-#selectDouble {
+#selectDouble, #selectMix {
 	font-family: "BitcountMonoDoubleCircle";
 	border: none;
-	padding: 2px 2px 2px 3px;
+	padding: 2px 2px 1px 3px;
 }
-#selectMix {
-	font-family: "BitcountMonoDoubleCircle";
+#selectRoman, #selectItalic, #selectLayer1, #selectLayer2, #selectLayer3, #selectLayer4 {
 	border: none;
-	padding: 2px 2px 2px 3px;
+	padding: 2px 2px 1px 3px;	
 }
 #playerXX {
 	font-family: "BitcountMonoDoubleCircle",sans-serif;
