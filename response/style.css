@@ -459,7 +459,7 @@ a.nivo-nextNav{
 .nivo-controlNav a {
 	background: transparent none repeat scroll 0 0;
 	border: 1px solid #fff;
-	color: #167FFF;
+	color: #fff;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 0;
@@ -472,6 +472,7 @@ a.nivo-nextNav{
 .nivo-controlNav a.active{
 	background: rgba(50, 197, 210, 0.8) none repeat scroll 0 0;
 	border-color: #167FFF;
+	color: #fff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 /*animation*/
