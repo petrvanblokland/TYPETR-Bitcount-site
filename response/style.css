@@ -793,8 +793,8 @@ a.nivo-nextNav{
 	/*text-transform: uppercase;*/
 }
 .single_feature:hover{
-	background: #167FFF;
-	color: #fff;
+	background: #fff;
+	color: #333;
 }
 .single_feature:hover h4,
 .single_feature:hover .s_featicon_wrap{
