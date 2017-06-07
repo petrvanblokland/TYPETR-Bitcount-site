@@ -109,8 +109,19 @@ div#css_sample {
 	color: #00FF00;
 	padding: 6px;
 }
-.selectDouble {
+#selectSingle {
+	border: 1px solid #0000FF;;
+	padding: 2px 2px 2px 3px;
+}
+#selectDouble {
 	font-family: "BitcountMonoDoubleCircle";
+	border: none;
+	padding: 2px 2px 2px 3px;
+}
+#selectMix {
+	font-family: "BitcountMonoDoubleCircle";
+	border: none;
+	padding: 2px 2px 2px 3px;
 }
 #playerXX {
 	font-family: "BitcountMonoDoubleCircle",sans-serif;
