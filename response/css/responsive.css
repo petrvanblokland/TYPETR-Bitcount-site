@@ -67,6 +67,23 @@
 	background:#000;
 }
 
+
+/* align middle on mobile | slider title */
+
+.slide1{
+	text-align: center;
+}
+.slide2{
+	text-align: center;
+}
+.slide3{
+	text-align: center;
+}
+.slide4{
+	text-align: center;
+}
+
+
 	.sider_text p {
 	font-family: "BitcountPropSingle";
 	color: #fff;
