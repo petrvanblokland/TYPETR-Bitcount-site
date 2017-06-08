@@ -230,7 +230,7 @@ button:focus,
 }
 #main_nav li a:hover, #main_nav li a:focus, #main_nav li.current a{
 	background: transparent;
-	color: #00FFFF;
+	color: #449DFF;
 	outline: none;
 }
 
@@ -678,11 +678,11 @@ a.nivo-nextNav{
 	animation: slideInDown 2700ms ease-in-out;
 }
 .uk-active{
-    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
 	min-height: 50px;
 }
 .uk-active:before {
-  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
   content: "";
   height: 50px;
   left: 100%;
@@ -691,7 +691,7 @@ a.nivo-nextNav{
   width: 10000px;
 }
 .uk-active:after {
-  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
   content: "";
   height: 50px;
   right: 100%;
@@ -1063,7 +1063,7 @@ a.nivo-nextNav{
 -----------------------------------------------------------*/
 
 .counter_area {
-	background: #7F0FFF;
+	background: #333;
 	color: #fff;
 	overflow: hidden;
 	/*text-transform: uppercase;*/
