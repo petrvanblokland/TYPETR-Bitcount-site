@@ -144,13 +144,13 @@ function makeNewLayers(){
     e = document.getElementById('player1');
     e.style.color = c1 = getRandomColor();
     e.style.fontFamily = f1 = fontNamesForground[randomNumber1];
-    e.style.style = posture;
+    e.style.fontStyle = posture;
     css = ".layer1 {color:"+c1+"; font-family:"+f1+"; style:"+posture+";}<br>";
 
     e = document.getElementById('player2');
     e.style.color = c2 = getRandomColor();
     e.style.fontFamily = f2 = fontNamesForground[randomNumber2];
-    e.style.style = posture;
+    e.style.fontStyle = posture;
     if (layerCnt >= 2){
         e.style.display = 'inline';
         css += ".layer2 {color:"+c2+"; font-family:"+f2+"; style:"+posture+";}<br>";
@@ -160,7 +160,7 @@ function makeNewLayers(){
     e = document.getElementById('player3');
     e.style.color = c3 = getRandomColor();
     e.style.fontFamily = f3 = fontNames[randomNumber3];
-    e.style.style = posture;
+    e.style.fontStyle = posture;
     if (layerCnt >= 3){
         e.style.display = 'inline';
         css += ".layer3 {color:"+c3+"; font-family:"+f3+"; style:"+posture+";}<br>";
@@ -170,7 +170,7 @@ function makeNewLayers(){
     e = document.getElementById('player4');
     e.style.color = c4 = getRandomColor();
     e.style.fontFamily = f4 = fontNames[randomNumber4];
-    e.style.style = posture;
+    e.style.fontStyle = posture;
     if (layerCnt >= 4){
         e.style.display = 'inline';
         css += ".layer4 {color:"+c4+"; font-family:"+f4+"; style:"+posture+";}";
