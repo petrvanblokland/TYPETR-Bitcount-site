@@ -132,10 +132,10 @@ function toggleRomanItalic(){
 }
 function makeNewLayers(){
     var css;
-    var randomNumber1 = Math.floor(Math.random()*fontNames.length);
-    var randomNumber2 = Math.floor(Math.random()*fontNames.length);
-    var randomNumber3 = Math.floor(Math.random()*fontNamesForground.length);
-    var randomNumber4 = Math.floor(Math.random()*fontNamesForground.length);
+    var randomNumber1 = Math.floor(Math.random()*fontNamesForground.length);
+    var randomNumber2 = Math.floor(Math.random()*fontNamesForground.length);
+    var randomNumber3 = Math.floor(Math.random()*fontNames.length);
+    var randomNumber4 = Math.floor(Math.random()*fontNames.length);
 
     var e, c1, c2, c3, c4, f1, f2, f3, f4;
     e = document.getElementById('playroom_content')
@@ -143,13 +143,13 @@ function makeNewLayers(){
 
     e = document.getElementById('player1');
     e.style.color = c1 = getRandomColor();
-    e.style.fontFamily = f1 = fontNames[randomNumber1];
+    e.style.fontFamily = f1 = fontNamesForground[randomNumber1];
     e.style.style = posture;
     css = ".layer1 {color:"+c1+"; font-family:"+f1+"; style:"+posture+";}<br>";
 
     e = document.getElementById('player2');
     e.style.color = c2 = getRandomColor();
-    e.style.fontFamily = f2 = fontNames[randomNumber2];
+    e.style.fontFamily = f2 = fontNamesForground[randomNumber2];
     e.style.style = posture;
     if (layerCnt >= 2){
         e.style.display = 'inline';
@@ -159,7 +159,7 @@ function makeNewLayers(){
     
     e = document.getElementById('player3');
     e.style.color = c3 = getRandomColor();
-    e.style.fontFamily = f3 = fontNamesForground[randomNumber3];
+    e.style.fontFamily = f3 = fontNames[randomNumber3];
     e.style.style = posture;
     if (layerCnt >= 3){
         e.style.display = 'inline';
@@ -169,7 +169,7 @@ function makeNewLayers(){
     
     e = document.getElementById('player4');
     e.style.color = c4 = getRandomColor();
-    e.style.fontFamily = f4 = fontNamesForground[randomNumber4];
+    e.style.fontFamily = f4 = fontNames[randomNumber4];
     e.style.style = posture;
     if (layerCnt >= 4){
         e.style.display = 'inline';
@@ -177,7 +177,7 @@ function makeNewLayers(){
     } else
         e.style.display = 'none';
 
-    e = document.getElementById('css_sample');
-    e.innerHTML = css;
+    document.getElementById('css_sample').innerHTML = css;
+    document.getElementById('layerCnt').innerHTML = layerCnt;
 };
 

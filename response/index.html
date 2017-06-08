@@ -265,17 +265,17 @@ The only pixel font you’ll ever need
 						</div>							
 					</div>					
 					<div class="single_service">
-						<div class="service_icon">
+						<div onClick="selectStem('toggle');" class="service_icon">
 						<!--<i class="fa fa-windows"></i>-->
-						 Pixel
+						 <span style="font-family: BitcountMonoSingleCircle">a</span>a
 						</div>
 						<div class="service_text">
-							<h4>Single or Double</h4>
+							<h4 onClick="selectStem('toggle');">Single or Double</h4>
 							<p>
-								<span class="selectSingle" onClick="selectStem('single');">Single </span>
-								<span class="selectDouble" onClick="selectStem('double');">Double </span>
-								<span class="selectDouble" onClick="selectStem('mixed');">Mixed </span>
-									Click to select Single or Double pixel stem. Or mixed.
+								<span id="selectSingle" onClick="selectStem('single');">Single</span>
+								<span id="selectDouble" onClick="selectStem('double');">Double</span>
+								<span id="selectMix" onClick="selectStem('mixed');">Mixed</span>
+								<span onClick="selectStem('toggle');">Click to select Single or Double pixel stem. Or mixed.</span>
 							</p>	
 						</div>							
 					</div>					
@@ -283,24 +283,30 @@ The only pixel font you’ll ever need
 				
 				
 					<div class="single_service">
-						<div class="service_icon">
+						<div id="layerCnt" onClick="selectLayers(0);" class="service_icon">
 							<!--<i class="fa fa-windows"></i>-->
-							Layer
+							2
 						</div>
 						<div class="service_text">
-							<h4>Amount of layers</h4>
-							<p>Click for two, three of four layer example.</p>		
+							<h4 onClick="selectLayers(0);">Select layers</h4>
+							<p>								
+								<span id="selectLayer1" onClick="selectLayers(1);">1&nbsp;layer</span>
+								<span id="selectLayer2" onClick="selectLayers(2);">2&nbsp;layers</span>
+								<span id="selectLayer3" onClick="selectLayers(3);">3&nbsp;layers</span>
+								<span id="selectLayer4" onClick="selectLayers(4);">4&nbsp;layers</span>
+								<span onClick="selectLayers(0);">Click to select the amount of layers.</span>
+							</p>		
 						</div>
 					</div>					
 								
-					<div class="single_service">
-						<div class="service_icon">
+					<div clasS="single_service">
+						<div onClick="toggleRomanItalic();" class="service_icon">
 							<!--<i class="fa fa-windows"></i>-->
-							Italic
+							A<span style="font-style: italic">A</span>
 						</div>
-						<div class="service_text">
-							<h4>Roman or Italic</h4>
-							<p>Click for toggle between Roman and Italic.</p>	
+						<div onClick="toggleRomanItalic();" class="service_text">
+							<h4>Roman or italic</h4>
+							<p>Click to toggle between <span id="selectRoman">Roman</span> and <span id="selectItalic">Italic</span>.</p>	
 						</div>
 					</div>					
 					
