@@ -257,11 +257,11 @@ The only pixel font you’ll ever need
 				<div class="service_carousel">
 					<div class="single_service">
 						<div onClick="makeNewLayers();" class="service_icon">
-							New
+							+
 						</div>
 						<div onClick="makeNewLayers();" class="service_text">
 							<h4>New random layers</h4>
-							<p>Click to select a new set of random layers and colors. Use the HTML/CSS code below to recreate the current combination in your website.</p>
+							<p>Click to select a new set of random layers and colors.</p>
 						</div>							
 					</div>					
 					<div class="single_service">
@@ -945,116 +945,6 @@ The base package of Bitcount includes four sizes/weight for each unique pixel sh
 	<!-- End contact --> -->
 	
 	
-	
-	<script>
-	function getRandomColor() {
-        var letters = '0123456789ABCDEF';
-        var color = '#';
-        for (var i = 0; i < 6; i++ ) {
-            color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
-    };
-
-	var fontNamesDouble = [
-		'BitcountMonoDoubleBoldCircle',
-		'BitcountMonoDoubleBoldLineCircle',
-		'BitcountMonoDoubleBoldLineSquare',
-		'BitcountMonoDoubleBoldPlus',
-		'BitcountMonoDoubleBoldSquare',
-		'BitcountMonoDoubleBookCircle',
-		'BitcountMonoDoubleBookLineCircle',
-		'BitcountMonoDoubleBookLineSquare',
-		'BitcountMonoDoubleBookPlus',
-		'BitcountMonoDoubleBookSquare',
-		'BitcountMonoDoubleCircle',
-		'BitcountMonoDoubleLightCircle',
-		'BitcountMonoDoubleLightLineCircle',
-		'BitcountMonoDoubleLightLineSquare',
-		'BitcountMonoDoubleLightPlus',
-		'BitcountMonoDoubleLightSquare',
-		'BitcountMonoDoubleLightCircle',
-		'BitcountMonoDoubleLineSquare',
-		'BitcountMonoDoubleMediumCircle',
-		'BitcountMonoDoubleMediumLineCircle',
-		'BitcountMonoDoubleMediumLineSquare',
-		'BitcountMonoDoubleMediumPlus',
-		'BitcountMonoDoubleMediumSquare',
-		'BitcountMonoDoublePlus',
-		'BitcountMonoDoubleSquare'
-	];
-	var fontNamesSingle = [
-		'BitcountMonoSingleBoldCircle',
-		'BitcountMonoSingleBoldLineCircle',
-		'BitcountMonoSingleBoldLineSquare',
-		'BitcountMonoSingleBoldPlus',
-		'BitcountMonoSingleBoldSquare',
-		'BitcountMonoSingleBookCircle',
-		'BitcountMonoSingleBookLineCircle',
-		'BitcountMonoSingleBookLineSquare',
-		'BitcountMonoSingleBookPlus',
-		'BitcountMonoSingleBookSquare',
-		'BitcountMonoSingleCircle',
-		'BitcountMonoSingleLightCircle',
-		'BitcountMonoSingleLightLineCircle',
-		'BitcountMonoSingleLightLineSquare',
-		'BitcountMonoSingleLightPlus',
-		'BitcountMonoSingleLightSquare',
-		'BitcountMonoSingleLightCircle',
-		'BitcountMonoSingleLineSquare',
-		'BitcountMonoSingleMediumCircle',
-		'BitcountMonoSingleMediumLineCircle',
-		'BitcountMonoSingleMediumLineSquare',
-		'BitcountMonoSingleMediumPlus',
-		'BitcountMonoSingleMediumSquare',
-		'BitcountMonoSinglePlus',
-		'BitcountMonoSingleSquare'
-	];
-	var fontNames = fontNamesDouble;
-
-	function selectStem(selectedStemType){
-		if (selectedStemType == 'single')
-			fontNames = fontNamesSingle;
-		else if (selectedStemType == 'double')
-			fontNames = fontNamesDouble;
-		else
-			fontNames = [].concat(fontNamesSingle, fontNamesDouble);
-		makeNewLayers();
-	}
-	function makeNewLayers(){
-		var randomNumber1 = Math.floor(Math.random()*fontNames.length);
-		var randomNumber2 = Math.floor(Math.random()*fontNames.length);
-		var randomNumber3 = Math.floor(Math.random()*fontNames.length);
-		var randomNumber4 = Math.floor(Math.random()*fontNames.length);
-
-		var e, c1, c2, c3, c4;
-		e = document.getElementById('playroom_content')
-		e.style.lineHeight = Math.random()*0.02; /*0.0;*/
-
-		e = document.getElementById('player1');
-		e.style.color = c1 = getRandomColor();
-		e.style.fontFamily = fontNames[randomNumber1];
-
-		e = document.getElementById('player2');
-		e.style.color = c2 = getRandomColor();
-		e.style.fontFamily = fontNames[randomNumber2];
-		
-		e = document.getElementById('player3');
-		e.style.color = c3 = getRandomColor();
-		e.style.fontFamily = fontNames[randomNumber3];
-		
-		e = document.getElementById('player4');
-		e.style.color = c4 = getRandomColor();
-		e.style.fontFamily = fontNames[randomNumber4];
-
-		e = document.getElementById('css_sample')
-		/*
-		e.innerHTML = "&lt;div&gt;&lt;span&gt;"+fontNames[randomNumber1]+"<br>"+fontNames[randomNumber2+"<br>"+fontNames[randomNumber3]+"<br>"+fontNames[randomNumber4]+"<br>";
-		*/
-		e.innerHTML = ".layer1 {color:"+c1+"; font-family:"+fontNames[randomNumber1]+";}<br>.layer2 {color:"+c2+"; font-family:"+fontNames[randomNumber2]+";}<br>.layer3 {color:"+c3+"; font-family:"+fontNames[randomNumber3]+";}<br>.layer4 {color:"+c4+"; font-family:"+fontNames[randomNumber4]+";}"; 
-	};
-	makeNewLayers();
-	</script>
 	<!-- jquery library -->
     <script src="js/vendor/jquery.1.11.3.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -1078,5 +968,10 @@ The base package of Bitcount includes four sizes/weight for each unique pixel sh
     <script src="js/retina.min.js"></script>	
 	<script src="js/wow.min.js"></script>
 	<script src="js/main.js"></script>	
+	<script src="js/bitcountselector.js"></script>
+	<script>
+	selectLayers(2);
+    makeNewLayers();
+    </script>
 </body>
 </html>
