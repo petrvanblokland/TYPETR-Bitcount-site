@@ -46,7 +46,7 @@ var fontNamesSingleBackground = [
     'BitcountMonoSingleMediumCircle',
     'BitcountMonoSingleMediumSquare'
 ];
-var fontNameSingleForground = [
+var fontNamesSingleForground = [
     'BitcountMonoSingleBoldLineCircle',
     'BitcountMonoSingleBoldLineSquare',
     'BitcountMonoSingleBoldPlus',
@@ -67,7 +67,7 @@ var fontNameSingleForground = [
     'BitcountMonoSingleMediumPlus',
     'BitcountMonoSinglePlus'
 ];
-var fontNamesSingle = [].concat(fontNamesSingleBackground, fontNameSingleForground);
+var fontNamesSingle = [].concat(fontNamesSingleBackground, fontNamesSingleForground);
 
 var fontNames = fontNamesDouble;
 var fontNamesForground = fontNamesDoubleForground;
@@ -94,11 +94,13 @@ function selectStem(selectedStemType){
         document.getElementById('selectMix').style['border'] = 'none';
     } else if (selectedStemType == 'double'){
         fontNames = fontNamesDouble;
+        fontNamesForground = fontNamesDoubleForground;
         document.getElementById('selectSingle').style['border'] = 'none';
         document.getElementById('selectDouble').style['border'] = border;
         document.getElementById('selectMix').style['border'] = 'none';
     } else { /* selectedStemType == 'mix' */
         fontNames = [].concat(fontNamesSingle, fontNamesDouble);
+        fontNamesForground = [].concat(fontNamesSingleForground, fontNamesDoubleForground);
         document.getElementById('selectSingle').style['border'] = 'none';
         document.getElementById('selectDouble').style['border'] = 'none';
         document.getElementById('selectMix').style['border'] = border;
