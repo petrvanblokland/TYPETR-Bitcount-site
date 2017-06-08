@@ -177,7 +177,7 @@ button:focus,
 .radon:focus{
 	text-decoration: none;
 	color: #fff;
-	background: #0995a1;
+	background: #333;
 	border-color: #0995a1;
 }
 
