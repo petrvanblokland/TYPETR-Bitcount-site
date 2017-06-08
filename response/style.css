@@ -18,9 +18,7 @@ body{
 	font-size: 17px;
 	line-height:1.6em;
 	overflow-x: hidden;
-	
-	
-	
+
 }
 h2, h3, h4, h5, h6{
 	color: #333;
@@ -378,7 +376,7 @@ button:focus,
 	margin-bottom: 40px;
 	text-transform: None;
 	line-height: 120px;
-	font-family: "BitcountMonoDoubleBoldLineCircle";
+	font-family: "BitcountGridDoubleCircle";
 
 } 
 
@@ -387,7 +385,7 @@ button:focus,
 	font-weight: 700;
 	text-transform: None;
 	line-height: 1.1em;
-	font-family: "BitcountMonoDoubleBoldLineSquare";
+	font-family: "BitcountPropDoubleCircle";
 
 } 
 
@@ -406,6 +404,13 @@ button:focus,
 	-ms-font-feature-settings:"ss01", "ss02", "ss03";
 	-webkit-font-feature-settings:"ss01", "ss02", "ss03";
 	font-feature-settings:"ss01", "ss02", "ss03";
+}
+.no_ligatures {
+	-moz-font-feature-settings:"liga=0";
+	-moz-font-feature-settings:"liga=0";
+	-ms-font-feature-settings:"liga=0";
+	-webkit-font-feature-settings:"liga=0";
+	font-feature-settings:"liga=0";
 }
 .sider_text > .btn_wrap{
 	margin-top: 40px;
@@ -1019,7 +1024,8 @@ a.nivo-nextNav{
 .single_service .service_icon{
 	border-radius: 50%;
 	height: 80px;
-	padding-left: 8px; /* 1 pixel */
+	padding-left: 7px; /* 1 pixel */
+	padding-top: 1px; /* 1 pixel */
 	line-height: 80px;
 	margin: auto auto 30px;
 	width: 80px;

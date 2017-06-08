@@ -74,7 +74,7 @@ var fontNamesForground = fontNamesDoubleForground;
 
 var layerCnt = 2;
 var stemType = 'single';
-var posture = 'normal';
+var posture = 'italic'; /* Will toggle on init to roman. */
 var border = '1px solid #0000FF';
 
 function selectStem(selectedStemType){
