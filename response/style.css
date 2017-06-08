@@ -15,8 +15,8 @@ Version: 1.2
 body{
 	font-family: 'BitcountSingle', sans-serif;
 	color: #8a8a8a;
-	font-size: 17px;
-	line-height:1.6em;
+	font-size: 18px;
+	line-height:1.4em;
 	overflow-x: hidden;
 
 }
@@ -1101,7 +1101,7 @@ a.nivo-nextNav{
 .single_pricing .header,
 .single_pricing .footer{
 	background: #f1f1f1;
-	padding: 30px 20px;
+	padding: 20px 10px;
 	
 }
 .single_pricing .plan_name{
