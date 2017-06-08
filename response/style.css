@@ -1272,7 +1272,7 @@ a.nivo-nextNav{
 	
 }
 .sing_link_img a:hover{
-	background: #167FFF;	
+	background: #666;	
 	border-color: #167FFF;
 }
 .sing_link_img a.search{
@@ -1285,7 +1285,7 @@ a.nivo-nextNav{
 	animation: slideInUp 1200ms ease-in-out;
 }
 .single_gallery:hover{
-	background: #167FFF;
+	background: #666;
 	color: #fff;
 }
 .single_gallery:hover .sing_work_text_link{
