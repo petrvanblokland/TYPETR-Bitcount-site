@@ -83,7 +83,11 @@
 	}
 	.nivoSlider img  {
 			height: 430px !important;
+			background-size:cover;
+
 		}
+		
+
 		
 		.navbar-collapse {
 		background:#000;
