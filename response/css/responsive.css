@@ -106,16 +106,16 @@
 	/* align middle on mobile | slider title */
 
 	.slide1{
-		text-align: center;
+		text-align: left;
 	}
 	.slide2{
-		text-align: center;
+		text-align: left;
 	}
 	.slide3{
-		text-align: center;
+		text-align: left;
 	}
 	.slide4{
-		text-align: center;
+		text-align: left;
 	}
 	.sider_text p {
 		font-family: "BitcountPropSingle";
