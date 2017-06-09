@@ -1,71 +1,114 @@
 function getRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-};
+    var opacity = 0.8 + 0.2*Math.random();
+    var colors = [
+        [0, 0, 0, opacity],
+        [1, 0.9*0.1*Math.random(), 1, opacity],
+        [0.5, 0.9*0.1*Math.random(), 1, opacity],
+        [0.9*0.1*Math.random(), 1, 1, opacity],
+        [0.9*0.1*Math.random(), 0.5, 1, opacity],
+        /*[1, 1, 0.9*0.1*Math.random(), opacity],  */                   
+        /*[0.6, 1, 0.9*0.1*Math.random(), opacity], */
+
+        [0, 0, 0, opacity],
+        [1, 0.9*0.1*Math.random(), 1, opacity],
+        [0.5, 0.9*0.1*Math.random(), 1, opacity],
+        [0.9*0.1*Math.random(), 1, 1, opacity],
+        [0.9*0.1*Math.random(), 0.5, 1, opacity],
+        /*[1, 1, 0.9*0.1*Math.random(), opacity],  */                   
+        /*[0.6, 1, 0.9*0.1*Math.random(), opacity],*/
+
+        [0, 0, 0, opacity],
+        [1, 0.9*0.1*Math.random(), 1, opacity],
+        [0.5, 0.9*0.1*Math.random(), 1, opacity],
+        [0.9*0.1*Math.random(), 1, 1, opacity],
+        [0.9*0.1*Math.random(), 0.5, 1, opacity],
+        /*[1, 1, 0.9*0.1*Math.random(), opacity],  */                   
+        /*[0.6, 1, 0.9*0.1*Math.random(), opacity],*/
+    ];
+    var color = colors[Math.floor(Math.random()*colors.length)];
+    return '#' + Math.floor(color[0]*255).toString(16) + Math.floor(color[1]*255).toString(16) + Math.floor(color[2]*255).toString(16);
+}
+
 
 var fontNamesDoubleBackground = [
-    'BitcountMonoDoubleBoldCircle',
-    'BitcountMonoDoubleBoldSquare',
-    'BitcountMonoDoubleSquare',
-    'BitcountMonoDoubleCircle',
+    'BitcountMonoDoubleRegularCircle',
+    'BitcountMonoDoubleRegularSquare',
+
     'BitcountMonoDoubleMediumCircle',
-    'BitcountMonoDoubleMediumSquare'
+    'BitcountMonoDoubleMediumSquare',
+
+    'BitcountMonoDoubleBoldCircle',
+    'BitcountMonoDoubleBoldSquare'
 ];
 var fontNamesDoubleForground = [
-    'BitcountMonoDoubleBoldLineCircle',
-    'BitcountMonoDoubleBoldLineSquare',
-    'BitcountMonoDoubleBoldPlus',
-    'BitcountMonoDoubleBookCircle',
-    'BitcountMonoDoubleBookLineCircle',
-    'BitcountMonoDoubleBookLineSquare',
-    'BitcountMonoDoubleBookPlus',
-    'BitcountMonoDoubleBookSquare',
     'BitcountMonoDoubleLightCircle',
+    'BitcountMonoDoubleLightSquare',
+    'BitcountMonoDoubleLightPlus',
+
+    'BitcountMonoDoubleBookCircle',
+    'BitcountMonoDoubleBookSquare',
+    'BitcountMonoDoubleBookPlus',
+
+    'BitcountMonoDoubleRegularPlus',
+    'BitcountMonoDoubleMediumPlus',
+    'BitcountMonoDoubleBoldPlus',
+
+    /* Line */
     'BitcountMonoDoubleLightLineCircle',
     'BitcountMonoDoubleLightLineSquare',
-    'BitcountMonoDoubleLightPlus',
-    'BitcountMonoDoubleLightSquare',
-    'BitcountMonoDoubleLightCircle',
-    'BitcountMonoDoubleLineSquare',
+
+    'BitcountMonoDoubleBookLineCircle',
+    'BitcountMonoDoubleBookLineSquare',
+
+    'BitcountMonoDoubleRegularLineCircle',
+    'BitcountMonoDoubleRegularLineSquare',
+
     'BitcountMonoDoubleMediumLineCircle',
     'BitcountMonoDoubleMediumLineSquare',
-    'BitcountMonoDoubleMediumPlus',
-    'BitcountMonoDoublePlus'
+
+    'BitcountMonoDoubleBoldLineCircle',
+    'BitcountMonoDoubleBoldLineSquare'
 ];
 var fontNamesDouble = [].concat(fontNamesDoubleBackground, fontNamesDoubleForground);
 
 var fontNamesSingleBackground = [
-    'BitcountMonoSingleBoldCircle',
-    'BitcountMonoSingleBoldSquare',
-    'BitcountMonoSingleCircle',
-    'BitcountMonoSingleSquare',
+    'BitcountMonoSingleRegularCircle',
+    'BitcountMonoSingleRegularSquare',
+
     'BitcountMonoSingleMediumCircle',
-    'BitcountMonoSingleMediumSquare'
+    'BitcountMonoSingleMediumSquare',
+
+    'BitcountMonoSingleBoldCircle',
+    'BitcountMonoSingleBoldSquare'
 ];
 var fontNamesSingleForground = [
-    'BitcountMonoSingleBoldLineCircle',
-    'BitcountMonoSingleBoldLineSquare',
-    'BitcountMonoSingleBoldPlus',
-    'BitcountMonoSingleBookCircle',
-    'BitcountMonoSingleBookLineCircle',
-    'BitcountMonoSingleBookLineSquare',
-    'BitcountMonoSingleBookPlus',
-    'BitcountMonoSingleBookSquare',
     'BitcountMonoSingleLightCircle',
+    'BitcountMonoSingleLightSquare',
+    'BitcountMonoSingleLightPlus',
+
+    'BitcountMonoSingleBookCircle',
+    'BitcountMonoSingleBookSquare',
+    'BitcountMonoSingleBookPlus',
+
+    'BitcountMonoSingleRegularPlus',
+    'BitcountMonoSingleMediumPlus',
+    'BitcountMonoSingleBoldPlus',
+
+    /* Line */
     'BitcountMonoSingleLightLineCircle',
     'BitcountMonoSingleLightLineSquare',
-    'BitcountMonoSingleLightPlus',
-    'BitcountMonoSingleLightSquare',
-    'BitcountMonoSingleLightCircle',
-    'BitcountMonoSingleLineSquare',
+
+    'BitcountMonoSingleBookLineCircle',
+    'BitcountMonoSingleBookLineSquare',
+
+    'BitcountMonoSingleRegularLineCircle',
+    'BitcountMonoSingleRegularLineSquare',
+
     'BitcountMonoSingleMediumLineCircle',
     'BitcountMonoSingleMediumLineSquare',
-    'BitcountMonoSingleMediumPlus',
-    'BitcountMonoSinglePlus'
+
+    'BitcountMonoSingleBoldLineCircle',
+    'BitcountMonoSingleBoldLineSquare'
 ];
 var fontNamesSingle = [].concat(fontNamesSingleBackground, fontNamesSingleForground);
 
@@ -206,5 +249,5 @@ function makeNewLayers(){
 
 useShortSample($(window).width() < 767);
 toggleRomanItalic();
-selectLayers(2);
+selectLayers(4);
 makeNewLayers();

@@ -19,6 +19,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'BitcountPropDouble';
+  src: url('../fontsfull/Bitcount_Prop_Double-Circle.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'BitcountMonoSingle';
   src: url('../fontsfull/Bitcount_Mono_Single-Circle.ttf');
   font-weight: normal;
@@ -553,6 +559,20 @@
 @font-face {
   font-family: 'BitcountMonoSingleBookSquare';
   src: url('../fontsfull/Bitcount_Mono_Single-Book_Square_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoSingleBookCircle';
+  src: url('../fontsfull/Bitcount_Mono_Single-Book_Circle.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoSingleBookCircle';
+  src: url('../fontsfull/Bitcount_Mono_Single-Book_Circle_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
