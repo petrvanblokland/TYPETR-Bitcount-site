@@ -77,6 +77,27 @@ var stemType = 'single';
 var posture = 'italic'; /* Will toggle on init to roman. */
 var border = '1px solid #0000FF';
 
+function mediaChanged(){
+    /* @media changed width if the #mediamMarker. Width shows current status. 
+    5: @media (min-width: 1201px) and (max-width: 1366px) 
+    4: @media(max-width: 991px) 
+    3: @media (max-width: 767px) 
+    */
+    var s;
+    var w = document.getElementById('mediaMarker').style['width'];
+    alert(w);
+    if (w > 3)
+        s = 'Bitcount</br>';
+    else
+        s = 'Bit</br>';
+    alert(w);
+    document.getElementById('player1').style['backgroundColor'] = '#FFFF00';
+    document.getElementById('player1').innerHTML = s;
+    document.getElementById('player2').innerHTML = s;
+    document.getElementById('player3').innerHTML = s;
+    document.getElementById('player4').innerHTML = s;
+
+}
 function selectStem(selectedStemType){
     if (selectedStemType == 'toggle'){
         if (stemType == 'single')

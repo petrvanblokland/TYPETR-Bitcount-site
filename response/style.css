@@ -102,10 +102,7 @@ h1 {
 	margin-bottom: 200px;
 	z-index: 5;
 }
-@media only screen and (max-width: 800px) {
-	#player1, #player2, #player3, #player4 {content: "Bit";background-color: #FFFF00;
-	}
-}
+#mediaMarker {width:600px; background-color: #00FF00; font-size:100px; color: red;} /* Call back in JS if @media changes. */
 div#css_sample {
 	background-color: #000000;
 	color: #00FF00;
