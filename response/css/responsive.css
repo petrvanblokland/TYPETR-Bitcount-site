@@ -81,6 +81,15 @@
 	.playroom {
 		font-size: 230px; /* Showing as "Bit" */
 	}
+	
+	
+	.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: auto !important;
+}
+
+	
 	.nivoSlider img  {
 			height: 430px !important;
 			background-size:cover;
