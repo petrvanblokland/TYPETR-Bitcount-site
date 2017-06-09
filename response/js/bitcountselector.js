@@ -72,32 +72,32 @@ var fontNamesSingle = [].concat(fontNamesSingleBackground, fontNamesSingleForgro
 var fontNames = fontNamesDouble;
 var fontNamesForground = fontNamesDoubleForground;
 
-var layerCnt = 2;
+var layerCnt = 4;
 var stemType = 'single';
 var posture = 'italic'; /* Will toggle on init to roman. */
 var border = '1px solid #0000FF';
 
-function mediaChanged(){
-    /* @media changed width if the #mediamMarker. Width shows current status. 
-    5: @media (min-width: 1201px) and (max-width: 1366px) 
-    4: @media(max-width: 991px) 
-    3: @media (max-width: 767px) 
-    */
+function useShortSample(isShort){
     var s;
-    var w = document.getElementById('mediaMarker').style['width'];
-    alert(w);
-    if (w > 3)
-        s = 'Bitcount</br>';
-    else
+    if (isShort){
+        // the width of browser is more then 700px
         s = 'Bit</br>';
-    alert(w);
-    document.getElementById('player1').style['backgroundColor'] = '#FFFF00';
+    } else
+        // the width of browser is less then 700px
+        s = 'Bitcount</br>';
+
     document.getElementById('player1').innerHTML = s;
     document.getElementById('player2').innerHTML = s;
     document.getElementById('player3').innerHTML = s;
     document.getElementById('player4').innerHTML = s;
-
 }
+
+/* https://modernweb.com/using-media-queries-in-javascript/ */
+var mq = window.matchMedia('all and (max-width: 767px)');
+mq.addListener(function(changed) {
+    useShortSample(changed.matches);
+});
+
 function selectStem(selectedStemType){
     if (selectedStemType == 'toggle'){
         if (stemType == 'single')
@@ -204,3 +204,7 @@ function makeNewLayers(){
     document.getElementById('layerCnt').innerHTML = layerCnt;
 };
 
+useShortSample($(window).width() < 767);
+toggleRomanItalic();
+selectLayers(2);
+makeNewLayers();

@@ -1,5 +1,10 @@
+
+
 @media (min-width: 1201px) and (max-width: 1366px) {
-	#mediaMarker {width:500px; background-color: #00FFFF;}
+	.playroom {
+		font-size: 200px;
+	}
+
 	.sider_text .first_heading{
 		font-size: 5em;
 		line-height: 1.5em;
@@ -25,7 +30,10 @@
 }
 
 @media(max-width: 991px) {
-	#mediaMarker {width:400px; background-color: #FF00FF;}
+
+	.playroom {
+		font-size: 150px;
+	}
 	.description_img_left, .description_img_right{
 		position: relative;
 		height: 460px;
@@ -60,7 +68,6 @@
 
 /* small mobile :320px. */
 @media (max-width: 767px) {
-	#mediaMarker {width:300px; background-color: #FFFF00;}
 
 	body{
 		font-family: 'BitcountSingle', sans-serif;
@@ -71,7 +78,9 @@
 
 	}
 
-
+	.playroom {
+		font-size: 230px; /* Showing as "Bit" */
+	}
 	.nivoSlider img  {
 			height: 430px !important;
 		}

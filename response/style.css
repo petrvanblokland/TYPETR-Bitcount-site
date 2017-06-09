@@ -102,7 +102,6 @@ h1 {
 	margin-bottom: 200px;
 	z-index: 5;
 }
-#mediaMarker {width:600px; background-color: #00FF00; font-size:100px; color: red;} /* Call back in JS if @media changes. */
 div#css_sample {
 	background-color: #000000;
 	color: #00FF00;
@@ -1073,6 +1072,7 @@ a.nivo-nextNav{
 	color: #fff;
 	font-weight: 300;
 }
+h1.diap {color: #fff;}
 .counter_area strong{
 	
 }
