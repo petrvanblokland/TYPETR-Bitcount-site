@@ -19,29 +19,37 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'BitcountMonoSingle';
+  src: url('../fontsfull/Bitcount_Mono_Single-Circle.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountGridSingle';
+  src: url('../fontsfull/Bitcount_Grid_Single-Circle.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BitcountMonoDouble';
+  src: url('../fontsfull/Bitcount_Prop_Double-Circle.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'BitcountPropDouble';
   src: url('../fontsfull/Bitcount_Prop_Double-Circle.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'BitcountProp';
-  src: url('../fontsfull/Bitcount_Prop_Double-Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountGrid';
+  font-family: 'BitcountGridDouble';
   src: url('../fontsfull/Bitcount_Grid_Double-Circle.ttf');
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'BitcountSingle';
-  src: url('../fontsfull/Bitcount_Mono_Single-Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
+
 
 /* D O U B L E */
 

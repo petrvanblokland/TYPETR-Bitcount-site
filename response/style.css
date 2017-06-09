@@ -360,36 +360,51 @@ button:focus,
 .sider_text h1, .sider_text h3{
 	color: #fff;
 }
-
+.sider_text .home_heading{
+	font-size: 150px;
+	font-weight: 700;
+	margin-bottom: 40px;
+	text-transform: None;
+	line-height: 120px;
+	font-family: "BitcountMonoDouble";
+}
+.sider_text .home_sub_heading {
+	font-family: "BitcountMonoSingle";
+}
 .sider_text .first_heading{
 	font-size: 150px;
 	font-weight: 700;
 	margin-bottom: 40px;
 	text-transform: None;
 	line-height: 120px;
-	font-family: "BitcountMonoDoubleCircle";
+	font-family: "BitcountMonoDouble";
 }
-
+.sider_text .first_sub_heading {
+	font-family: "BitcountMonoSingle";
+}
 .sider_text .second_heading{
 	font-size: 150px;
 	font-weight: 700;
 	margin-bottom: 40px;
 	text-transform: None;
 	line-height: 120px;
-	font-family: "BitcountGridDoubleCircle";
+	font-family: "BitcountGridDouble";
 
 } 
-
+.sider_text .second_sub_heading {
+	font-family: "BitcountGridSingle";
+}
 .sider_text .third_heading{
 	font-size: 150px;
 	font-weight: 700;
 	text-transform: None;
 	line-height: 1.1em;
-	font-family: "BitcountPropDoubleCircle";
+	font-family: "BitcountPropDouble";
 
 } 
-
-
+.sider_text .third_sub_heading {
+	font-family: "BitcountPropSingle";
+}
 
 .sider_text p {
 	font-family: "BitcountPropSingle";
