@@ -10,10 +10,12 @@
 @media(max-width: 991px) {
 
 	.playroom {
-		font-size: 150px;
+		font-size: 260px;
+		height: 220px;
 	}
     #player1, #player2, #player3, #player4 {
-    		padding-left: 20px ;
+    	width:100%;
+		padding-left: 20px ;
     }
 
 	.description_img_left, .description_img_right{
@@ -47,7 +49,8 @@
 	}
 	
     #player1, #player2, #player3, #player4 {
-    		padding-left: 10px ;
+    	width:100%;
+    	padding-left: 30px ;
     }
 	.nivo-main-image {
 		display: block !important;

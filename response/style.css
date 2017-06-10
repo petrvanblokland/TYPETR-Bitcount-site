@@ -66,29 +66,33 @@ h1 {
 #player1 {
 	position: absolute;
 	height:220px;
+	width: 100%;
 	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
-	padding: 0 0 50px 110px ;
+	padding: 0 0 50px 0px ;
 	z-index: 30;
 }
 #player2 {
 	position: absolute;
 	height:220px;
+	width: 100%;
 	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
-	padding: 0 0 50px 110px ;
+	padding: 0 0 50px 0px ;
 	z-index: 20;
 }
 #player3 {
 	position: absolute;
 	height:220px;
+	width: 100%;
 	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
-	padding: 0 0 50px 110px ;
+	padding: 0 0 50px 0px ;
 	z-index: 10;
 }
 #player4 {
 	position: absolute;
 	height:220px;
+	width: 100%;
 	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
-	padding: 0 0 50px 110px ;
+	padding: 0 0 50px 0px ;
 	z-index: 5;
 }
 div#css_sample {

@@ -138,7 +138,7 @@ function useShortSample(isShort){
 }
 
 /* https://modernweb.com/using-media-queries-in-javascript/ */
-var mq = window.matchMedia('all and (max-width: 767px)');
+var mq = window.matchMedia('all and (max-width: 991px)');
 mq.addListener(function(changed) {
     useShortSample(changed.matches);
 });
@@ -267,7 +267,7 @@ function makeNewLayers(){
     document.getElementById('layerCnt').innerHTML = layerCnt;
 };
 
-useShortSample($(window).width() < 767);
+useShortSample($(window).width() < 991);
 toggleRomanItalic();
 selectStem('double');
 selectLayers(4);
