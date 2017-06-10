@@ -118,7 +118,7 @@ var fontNames = fontNamesDouble;
 var fontNamesForground = fontNamesDoubleForground;
 
 var layerCnt = 4;
-var stemType = 'single';
+var stemType = 'double';
 var posture = 'italic'; /* Will toggle on init to roman. */
 var border = '1px solid #0000FF';
 
@@ -205,23 +205,33 @@ function makeNewLayers(){
     var randomNumber3 = Math.floor(Math.random()*fontNames.length);
     var randomNumber4 = Math.floor(Math.random()*fontNames.length);
 
-    var e, c1, c2, c3, c4, f1, f2, f3, f4;
+    var shifts = [0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,3,4,5,6];
+
+    var e, c1, c2, c3, c4, f1, f2, f3, f4, x, y;
     e = document.getElementById('playroom_content')
-    e.style.lineHeight = Math.random()*0.02; /*0.0;*/
+    /*e.style.lineHeight = Math.random()*0.02; /*0.0;*/
 
     e = document.getElementById('player1');
     e.style.color = c1 = getRandomColor();
     e.style.fontFamily = f1 = fontNamesForground[randomNumber1];
     e.style.fontStyle = posture;
-    css = ".layer1 {color:"+c1+"; font-family:"+f1+"; style:"+posture+";}<br>";
+    x = shifts[Math.floor(Math.random()*shifts.length)];
+    y = shifts[Math.floor(Math.random()*shifts.length)];
+    e.style.left = x+'px';
+    e.style.top = y+'px';
+    css = ".layer1 {font-family:"+f1+"; style:"+posture+"; color:"+c1+"; left:"+x+"px; top:"+y+"px;}<br>";
 
     e = document.getElementById('player2');
     e.style.color = c2 = getRandomColor();
     e.style.fontFamily = f2 = fontNamesForground[randomNumber2];
     e.style.fontStyle = posture;
     if (layerCnt >= 2){
-        e.style.display = 'inline';
-        css += ".layer2 {color:"+c2+"; font-family:"+f2+"; style:"+posture+";}<br>";
+        x += shifts[Math.floor(Math.random()*shifts.length)];
+        y += shifts[Math.floor(Math.random()*shifts.length)];
+        e.style.left = x+'px';
+        e.style.top = y+'px';
+        e.style.display = 'block';
+        css += ".layer2 {font-family:"+f2+"; style:"+posture+"; color:"+c2+"; left:"+x+"px; top:"+y+"px;}<br>";
     } else
         e.style.display = 'none';
     
@@ -230,8 +240,12 @@ function makeNewLayers(){
     e.style.fontFamily = f3 = fontNames[randomNumber3];
     e.style.fontStyle = posture;
     if (layerCnt >= 3){
-        e.style.display = 'inline';
-        css += ".layer3 {color:"+c3+"; font-family:"+f3+"; style:"+posture+";}<br>";
+        x += shifts[Math.floor(Math.random()*shifts.length)];
+        y += shifts[Math.floor(Math.random()*shifts.length)];
+        e.style.left = x+'px';
+        e.style.top = y+'px';
+        e.style.display = 'block';
+        css += ".layer3 {font-family:"+f3+"; style:"+posture+"; color:"+c3+"; left:"+x+"px; top:"+y+"px;}<br>";
     } else
         e.style.display = 'none';
     
@@ -240,8 +254,12 @@ function makeNewLayers(){
     e.style.fontFamily = f4 = fontNames[randomNumber4];
     e.style.fontStyle = posture;
     if (layerCnt >= 4){
-        e.style.display = 'inline';
-        css += ".layer4 {color:"+c4+"; font-family:"+f4+"; style:"+posture+";}";
+        x += shifts[Math.floor(Math.random()*shifts.length)];
+        y += shifts[Math.floor(Math.random()*shifts.length)];
+        e.style.left = x+'px';
+        e.style.top = y+'px';
+        e.style.display = 'block';
+        css += ".layer4 {font-family:"+f4+"; style:"+posture+"; color:"+c4+"; left:"+x+"px; top:"+y+"px;}<br>";
     } else
         e.style.display = 'none';
 
@@ -251,5 +269,6 @@ function makeNewLayers(){
 
 useShortSample($(window).width() < 767);
 toggleRomanItalic();
+selectStem('double');
 selectLayers(4);
 makeNewLayers();

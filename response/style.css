@@ -54,48 +54,41 @@ h1 {
 	font-family: "BitcountPropDoubleRegularCircle",sans-serif;
 }
 .playroom {
+	position: relative;
 	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
 	text-align: center;
-	margin: 30px 20px 0px 20px;
-	height:150px;
-	padding: 50px 20px 50px 20px;
-	font-size: 180px;
+	margin: -50px auto 50px auto;
+	height:180px;
+	padding: 20px 20px 150px 20px;
+	font-size: 200px;
+	line-height: 1.3em;
 }
 #player1 {
-	position: relative;
-	top: 0px;
-	left: 0px;
+	position: absolute;
+	height:220px;
 	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
-	padding-bottom: 0;
-	margin-bottom: 0;
+	padding: 0 0 50px 110px ;
 	z-index: 30;
 }
 #player2 {
-	position: relative;
-	top: 0px;
-	left: 0px;
+	position: absolute;
+	height:220px;
 	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
-	padding-bottom: 0;
-	margin-bottom: 0;
+	padding: 0 0 50px 110px ;
 	z-index: 20;
 }
 #player3 {
-	position: relative;
-	top: 0px;
-	left: 0px;
+	position: absolute;
+	height:220px;
 	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
-	margin-bottom: 0;
+	padding: 0 0 50px 110px ;
 	z-index: 10;
 }
 #player4 {
-	position: relative;
-	top: 0px;
-	left: 0px;
+	position: absolute;
+	height:220px;
 	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
-	/*height: 60px;
-	margin-top: -68px;*/
-	padding-left: 0px;
-	margin-bottom: 200px;
+	padding: 0 0 50px 110px ;
 	z-index: 5;
 }
 div#css_sample {
@@ -115,11 +108,6 @@ div#css_sample {
 #selectRoman, #selectItalic, #selectLayer1, #selectLayer2, #selectLayer3, #selectLayer4 {
 	border: none;
 	padding: 2px 2px 1px 3px;	
-}
-#playerXX {
-	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
-	font-size: 200px;
-	line-height: 4px;
 }
 a{
 	color: #7F0FFF;
