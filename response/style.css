@@ -13,7 +13,7 @@ Version: 1.2
 */
 
 body{
-	font-family: 'BitcountSingle', sans-serif;
+	font-family: 'BitcountMonoSingleRegularCircle', sans-serif;
 	color: #8a8a8a;
 	font-size: 18px;
 	line-height:1.4em;
@@ -22,7 +22,7 @@ body{
 }
 h1, h2, h3, h4, h5, h6{
 	color: #333;
-	font-family: "BitcountMonoDoubleCircle",sans-serif;
+	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
 	margin: 0 0 15px;	
 	font-weight: 700;
 	line-height: normal;
@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6{
 
 h3 {
 	color: #333;
-	/*font-family: "BitcountProp",sans-serif;*/
+	/*font-family: "BitcountPropDoubleRegularCircle",sans-serif;*/
 	margin: 0 0 15px;
 	font-size: 22px;
 	font-weight: 700;
@@ -40,7 +40,7 @@ h3 {
 h1 {
 	color: #333;
 	text-transform:uppercase;
-	/*font-family: "BitcountProp",sans-serif;*/
+	/*font-family: "BitcountPropDoubleRegularCircle",sans-serif;*/
 	margin: 0 0 15px;
 	font-size: 52px;
 	font-weight: 700;
@@ -48,13 +48,13 @@ h1 {
 }
 
 .bitcountgrid {
-	font-family: "BitcountGrid",sans-serif;
+	font-family: "BitcountGridDoubleRegularCircle",sans-serif;
 }
 .bitcountprop {
-	font-family: "BitcountProp",sans-serif;
+	font-family: "BitcountPropDoubleRegularCircle",sans-serif;
 }
 .playroom {
-	font-family: "BitcountMonoDoubleCircle",sans-serif;
+	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
 	text-align: center;
 	margin: 0;
 	height:150px;
@@ -62,40 +62,36 @@ h1 {
 	font-size: 200px;
 }
 #player1 {
-	content: "Bitcount";
 	position: relative;
 	top: 0px;
 	left: 0px;
-	font-family: "BitcountMonoDoubleCircle",sans-serif;
+	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
 	padding-bottom: 0;
 	margin-bottom: 0;
 	z-index: 30;
 }
 #player2 {
-	content: "Bitcount";
 	position: relative;
 	top: 0px;
 	left: 0px;
-	font-family: "BitcountMonoDoubleCircle",sans-serif;
+	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
 	padding-bottom: 0;
 	margin-bottom: 0;
 	z-index: 20;
 }
 #player3 {
-	content: "Bitcount";
 	position: relative;
 	top: 0px;
 	left: 0px;
-	font-family: "BitcountMonoDoubleCircle",sans-serif;
+	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
 	margin-bottom: 0;
 	z-index: 10;
 }
 #player4 {
-	content: "Bitcount";
 	position: relative;
 	top: 0px;
 	left: 0px;
-	font-family: "BitcountMonoDoubleCircle",sans-serif;
+	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
 	/*height: 60px;
 	margin-top: -68px;*/
 	padding-left: 0px;
@@ -112,7 +108,7 @@ div#css_sample {
 	padding: 2px 2px 1px 3px;
 }
 #selectDouble, #selectMix {
-	font-family: "BitcountMonoDoubleCircle";
+	font-family: "BitcountMonoDoubleRegularCircle";
 	border: none;
 	padding: 2px 2px 1px 3px;
 }
@@ -121,7 +117,7 @@ div#css_sample {
 	padding: 2px 2px 1px 3px;	
 }
 #playerXX {
-	font-family: "BitcountMonoDoubleCircle",sans-serif;
+	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
 	font-size: 200px;
 	line-height: 4px;
 }
@@ -221,7 +217,7 @@ button:focus,
 }
 #main_nav li a{
 	color: #fff;
-	font-family: "BitcountSingle",sans-serif;
+	font-family: "BitcountMonoSingleRegularCircle",sans-serif;
 	font-size: 20px;
 	font-weight: 500;
 	padding: 3px 9px;
@@ -366,10 +362,10 @@ button:focus,
 	margin-bottom: 40px;
 	text-transform: None;
 	line-height: 120px;
-	font-family: "BitcountMonoDouble";
+	font-family: "BitcountMonoDoubleRegularCircle";
 }
 .sider_text .home_sub_heading {
-	font-family: "BitcountMonoSingle";
+	font-family: "BitcountMonoSingleRegularCircle";
 }
 .sider_text .first_heading{
 	font-size: 150px;
@@ -377,10 +373,10 @@ button:focus,
 	margin-bottom: 40px;
 	text-transform: None;
 	line-height: 120px;
-	font-family: "BitcountMonoDouble";
+	font-family: "BitcountMonoDoubleRegularCircle";
 }
 .sider_text .first_sub_heading {
-	font-family: "BitcountMonoSingle";
+	font-family: "BitcountMonoSingleRegularCircle";
 }
 .sider_text .second_heading{
 	font-size: 150px;
@@ -388,26 +384,23 @@ button:focus,
 	margin-bottom: 40px;
 	text-transform: None;
 	line-height: 120px;
-	font-family: "BitcountGridDouble";
-
+	font-family: "BitcountGridDoubleRegularCircle";
 } 
 .sider_text .second_sub_heading {
-	font-family: "BitcountGridSingle";
+	font-family: "BitcountGridSingleRegularCircle";
 }
 .sider_text .third_heading{
 	font-size: 150px;
 	font-weight: 700;
 	text-transform: None;
 	line-height: 1.1em;
-	font-family: "BitcountPropDouble";
-
+	font-family: "BitcountPropDoubleRegularCircle";
 } 
 .sider_text .third_sub_heading {
-	font-family: "BitcountPropSingle";
+	font-family: "BitcountPropSingleRegularCircle";
 }
-
 .sider_text p {
-	font-family: "BitcountPropSingle";
+	font-family: "BitcountPropSingleRegularCircle";
 	color: #fff;
 	font-size: 30px;
 	line-height: 33px;
@@ -1046,7 +1039,7 @@ a.nivo-nextNav{
 	transition: 0.5s;
 	color: #167FFF;	
 	font-size: 48px;
-	font-family: BitcountMonoDoubleCircle;
+	font-family: "BitcountMonoDoubleRegularCircle"
 }
 
 .single_service:hover .service_icon{
@@ -1081,7 +1074,7 @@ a.nivo-nextNav{
 }
 .counter_area h1{
 	font-size: 55px;
-	font-family: 'BitcountSingle', sans-serif;
+	font-family: 'BitcountMonoSingleRegularCircle', sans-serif;
 	margin-top: 15px;
 	margin-bottom: 15px;
 	color: #fff;
@@ -1618,7 +1611,7 @@ ul.footer_social_link li a i{
 	border-radius: 50px;
 	color: #167FFF;
 	content: '\f00c';
-	font-family: "BitcountSingle";
+	font-family: "BitcountSingleRegularCircle";
 	font-size: 13px;
 	height: 24px;
 	left: 0;

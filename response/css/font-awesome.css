@@ -5,212 +5,9 @@
 /* FONT PATH
  * -------------------------- */
 
+/*  D O U B L E */
 
-@font-face {
-  font-family: 'BitcountPropSingleMedium';
-  src: url('../fontsfull/Bitcount_Prop_Single-Medium_Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountPropSingle';
-  src: url('../fontsfull/Bitcount_Prop_Single-Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountPropDouble';
-  src: url('../fontsfull/Bitcount_Prop_Double-Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoSingle';
-  src: url('../fontsfull/Bitcount_Mono_Single-Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountGridSingle';
-  src: url('../fontsfull/Bitcount_Grid_Single-Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'BitcountMonoDouble';
-  src: url('../fontsfull/Bitcount_Prop_Double-Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountPropDouble';
-  src: url('../fontsfull/Bitcount_Prop_Double-Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountGridDouble';
-  src: url('../fontsfull/Bitcount_Grid_Double-Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-/* D O U B L E */
-
-@font-face {
-  font-family: 'BitcountMonoDoubleBoldCircle';
-  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoDoubleBoldCircle';
-  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Circle_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoDoubleBoldLineCircle';
-  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Line_Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoDoubleBoldLineCircle';
-  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Line_Circle_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoDoubleBoldLineSquare';
-  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Line_Square.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoDoubleBoldLineSquare';
-  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Line_Square_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoDoubleBoldPlus';
-  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Plus.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoDoubleBoldPlus';
-  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Plus_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoDoubleBoldSquare';
-  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Square.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoDoubleBoldSquare';
-  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Square_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoDoubleBookCircle';
-  src: url('../fontsfull/Bitcount_Mono_Double-Book_Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoDoubleBookCircle';
-  src: url('../fontsfull/Bitcount_Mono_Double-Book_Circle_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'BitcountMonoDoubleBookLineCircle';
-  src: url('../fontsfull/Bitcount_Mono_Double-Book_Line_Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoDoubleBookLineCircle';
-  src: url('../fontsfull/Bitcount_Mono_Double-Book_Line_Circle_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoDoubleBookLineSquare';
-  src: url('../fontsfull/Bitcount_Mono_Double-Book_Line_Square.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoDoubleBookLineSquare';
-  src: url('../fontsfull/Bitcount_Mono_Double-Book_Line_Square_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoDoubleBookPlus';
-  src: url('../fontsfull/Bitcount_Mono_Double-Book_Plus.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoDoubleBookPlus';
-  src: url('../fontsfull/Bitcount_Mono_Double-Book_Plus_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoDoubleBookSquare';
-  src: url('../fontsfull/Bitcount_Mono_Double-Book_Square.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoDoubleBookSquare';
-  src: url('../fontsfull/Bitcount_Mono_Double-Book_Square_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoDoubleCircle';
-  src: url('../fontsfull/Bitcount_Mono_Double-Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoDoubleCircle';
-  src: url('../fontsfull/Bitcount_Mono_Double-Circle_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
+/*  L I G H T */
 
 @font-face {
   font-family: 'BitcountMonoDoubleLightCircle';
@@ -221,6 +18,34 @@
 @font-face {
   font-family: 'BitcountMonoDoubleLightCircle';
   src: url('../fontsfull/Bitcount_Mono_Double-Light_Circle_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoDoubleLightSquare';
+  src: url('../fontsfull/Bitcount_Mono_Double-Light_Square.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoDoubleLightSquare';
+  src: url('../fontsfull/Bitcount_Mono_Double-Light_Square_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoDoubleLightPlus';
+  src: url('../fontsfull/Bitcount_Mono_Double-Light_Plus.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoDoubleLightPlus';
+  src: url('../fontsfull/Bitcount_Mono_Double-Light_Plus_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
@@ -254,42 +79,130 @@
 }
 
 
+/*  B O O K  */
+
 @font-face {
-  font-family: 'BitcountMonoDoubleLightPlus';
-  src: url('../fontsfull/Bitcount_Mono_Double-Light_Plus.ttf');
+  font-family: 'BitcountMonoDoubleBookCircle';
+  src: url('../fontsfull/Bitcount_Mono_Double-Book_Circle.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'BitcountMonoDoubleLightPlus';
-  src: url('../fontsfull/Bitcount_Mono_Double-Light_Plus_Italic.ttf');
+  font-family: 'BitcountMonoDoubleBookCircle';
+  src: url('../fontsfull/Bitcount_Mono_Double-Book_Circle_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 
 @font-face {
-  font-family: 'BitcountMonoDoubleLightSquare';
-  src: url('../fontsfull/Bitcount_Mono_Double-Light_Square.ttf');
+  font-family: 'BitcountMonoDoubleBookSquare';
+  src: url('../fontsfull/Bitcount_Mono_Double-Book_Square.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'BitcountMonoDoubleLightSquare';
-  src: url('../fontsfull/Bitcount_Mono_Double-Light_Square_Italic.ttf');
+  font-family: 'BitcountMonoDoubleBookSquare';
+  src: url('../fontsfull/Bitcount_Mono_Double-Book_Square_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 
 @font-face {
-  font-family: 'BitcountMonoDoubleLightCircle';
+  font-family: 'BitcountMonoDoubleBookPlus';
+  src: url('../fontsfull/Bitcount_Mono_Double-Book_Plus.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoDoubleBookPlus';
+  src: url('../fontsfull/Bitcount_Mono_Double-Book_Plus_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoDoubleBookLineCircle';
+  src: url('../fontsfull/Bitcount_Mono_Double-Book_Line_Circle.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoDoubleBookLineCircle';
+  src: url('../fontsfull/Bitcount_Mono_Double-Book_Line_Circle_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoDoubleBookLineSquare';
+  src: url('../fontsfull/Bitcount_Mono_Double-Book_Line_Square.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoDoubleBookLineSquare';
+  src: url('../fontsfull/Bitcount_Mono_Double-Book_Line_Square_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+/*  R E G U L A R  */
+
+@font-face {
+  font-family: 'BitcountMonoDoubleRegularCircle';
+  src: url('../fontsfull/Bitcount_Mono_Double-Circle.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoDoubleRegularCircle';
+  src: url('../fontsfull/Bitcount_Mono_Double-Circle_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoDoubleRegularSquare';
+  src: url('../fontsfull/Bitcount_Mono_Double-Square.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoDoubleRegularSquare';
+  src: url('../fontsfull/Bitcount_Mono_Double-Square_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoDoubleRegularPlus';
+  src: url('../fontsfull/Bitcount_Mono_Double-Plus.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoDoubleRegularPlus';
+  src: url('../fontsfull/Bitcount_Mono_Double-Plus_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoDoubleRegularLineCircle';
   src: url('../fontsfull/Bitcount_Mono_Double-Line_Circle.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'BitcountMonoDoubleLightCircle';
+  font-family: 'BitcountMonoDoubleRegularLineCircle';
   src: url('../fontsfull/Bitcount_Mono_Double-Line_Circle_Italic.ttf');
   font-weight: normal;
   font-style: italic;
@@ -297,32 +210,20 @@
 
 
 @font-face {
-  font-family: 'BitcountMonoDoubleLightCircle';
-  src: url('../fontsfull/Bitcount_Mono_Double-Line_Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoDoubleLightCircle';
-  src: url('../fontsfull/Bitcount_Mono_Double-Line_Circle_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoDoubleLineSquare';
+  font-family: 'BitcountMonoDoubleRegularLineSquare';
   src: url('../fontsfull/Bitcount_Mono_Double-Line_Square.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'BitcountMonoDoubleLineSquare';
+  font-family: 'BitcountMonoDoubleRegularLineSquare';
   src: url('../fontsfull/Bitcount_Mono_Double-Line_Square_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
+
+/*  M E D I U M */
 
 @font-face {
   font-family: 'BitcountMonoDoubleMediumCircle';
@@ -333,6 +234,34 @@
 @font-face {
   font-family: 'BitcountMonoDoubleMediumCircle';
   src: url('../fontsfull/Bitcount_Mono_Double-Medium_Circle_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoDoubleMediumSquare';
+  src: url('../fontsfull/Bitcount_Mono_Double-Medium_Square.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoDoubleMediumSquare';
+  src: url('../fontsfull/Bitcount_Mono_Double-Medium_Square_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoDoubleMediumPlus';
+  src: url('../fontsfull/Bitcount_Mono_Double-Medium_Plus.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoDoubleMediumPlus';
+  src: url('../fontsfull/Bitcount_Mono_Double-Medium_Plus_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
@@ -366,231 +295,80 @@
 }
 
 
+/*  B O L D */
+
 @font-face {
-  font-family: 'BitcountMonoDoubleMediumPlus';
-  src: url('../fontsfull/Bitcount_Mono_Double-Medium_Plus.ttf');
+  font-family: 'BitcountMonoDoubleBoldCircle';
+  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Circle.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'BitcountMonoDoubleMediumPlus';
-  src: url('../fontsfull/Bitcount_Mono_Double-Medium_Plus_Italic.ttf');
+  font-family: 'BitcountMonoDoubleBoldCircle';
+  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Circle_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 
 @font-face {
-  font-family: 'BitcountMonoDoubleMediumSquare';
-  src: url('../fontsfull/Bitcount_Mono_Double-Medium_Square.ttf');
+  font-family: 'BitcountMonoDoubleBoldSquare';
+  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Square.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'BitcountMonoDoubleMediumSquare';
-  src: url('../fontsfull/Bitcount_Mono_Double-Medium_Square_Italic.ttf');
+  font-family: 'BitcountMonoDoubleBoldSquare';
+  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Square_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 
 @font-face {
-  font-family: 'BitcountMonoDoublePlus';
-  src: url('../fontsfull/Bitcount_Mono_Double-Plus.ttf');
+  font-family: 'BitcountMonoDoubleBoldPlus';
+  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Plus.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'BitcountMonoDoublePlus';
-  src: url('../fontsfull/Bitcount_Mono_Double-Plus_Italic.ttf');
+  font-family: 'BitcountMonoDoubleBoldPlus';
+  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Plus_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 
 @font-face {
-  font-family: 'BitcountMonoDoubleSquare';
-  src: url('../fontsfull/Bitcount_Mono_Double-Square.ttf');
+  font-family: 'BitcountMonoDoubleBoldLineCircle';
+  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Line_Circle.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'BitcountMonoDoubleSquare';
-  src: url('../fontsfull/Bitcount_Mono_Double-Square_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-/* S I N G L E */
-
-@font-face {
-  font-family: 'BitcountMonoSingleBoldCircle';
-  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoSingleBoldCircle';
-  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Circle_Italic.ttf');
+  font-family: 'BitcountMonoDoubleBoldLineCircle';
+  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Line_Circle_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 
 @font-face {
-  font-family: 'BitcountMonoSingleBoldLineCircle';
-  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Line_Circle.ttf');
+  font-family: 'BitcountMonoDoubleBoldLineSquare';
+  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Line_Square.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'BitcountMonoSingleBoldLineCircle';
-  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Line_Circle_Italic.ttf');
+  font-family: 'BitcountMonoDoubleBoldLineSquare';
+  src: url('../fontsfull/Bitcount_Mono_Double-Bold_Line_Square_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 
-@font-face {
-  font-family: 'BitcountMonoSingleBoldLineSquare';
-  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Line_Square.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoSingleBoldLineSquare';
-  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Line_Square_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
 
-
-@font-face {
-  font-family: 'BitcountMonoSingleBoldPlus';
-  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Plus.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoSingleBoldPlus';
-  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Plus_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoSingleBoldSquare';
-  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Square.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoSingleBoldSquare';
-  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Square_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoSingleBoldSquare';
-  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Square.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoSingleBoldSquare';
-  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Square_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoSingleBookLineCircle';
-  src: url('../fontsfull/Bitcount_Mono_Single-Book_Line_Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoSingleBookLineCircle';
-  src: url('../fontsfull/Bitcount_Mono_Single-Book_Line_Circle_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoSingleBookLineSquare';
-  src: url('../fontsfull/Bitcount_Mono_Single-Book_Line_Square.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoSingleBookLineSquare';
-  src: url('../fontsfull/Bitcount_Mono_Single-Book_Line_Square_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoSingleBookPlus';
-  src: url('../fontsfull/Bitcount_Mono_Single-Book_Plus.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoSingleBookPlus';
-  src: url('../fontsfull/Bitcount_Mono_Single-Book_Plus_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoSingleBookSquare';
-  src: url('../fontsfull/Bitcount_Mono_Single-Book_Square.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoSingleBookSquare';
-  src: url('../fontsfull/Bitcount_Mono_Single-Book_Square_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoSingleBookCircle';
-  src: url('../fontsfull/Bitcount_Mono_Single-Book_Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoSingleBookCircle';
-  src: url('../fontsfull/Bitcount_Mono_Single-Book_Circle_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoSingleCircle';
-  src: url('../fontsfull/Bitcount_Mono_Single-Circle.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoSingleCircle';
-  src: url('../fontsfull/Bitcount_Mono_Single-Circle_Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-
+/*  S I N G L E */
 
 @font-face {
   font-family: 'BitcountMonoSingleLightCircle';
@@ -601,6 +379,34 @@
 @font-face {
   font-family: 'BitcountMonoSingleLightCircle';
   src: url('../fontsfull/Bitcount_Mono_Single-Light_Circle_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoSingleLightSquare';
+  src: url('../fontsfull/Bitcount_Mono_Single-Light_Square.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoSingleLightSquare';
+  src: url('../fontsfull/Bitcount_Mono_Single-Light_Square_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoSingleLightPlus';
+  src: url('../fontsfull/Bitcount_Mono_Single-Light_Plus.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoSingleLightPlus';
+  src: url('../fontsfull/Bitcount_Mono_Single-Light_Plus_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
@@ -634,42 +440,130 @@
 }
 
 
+/*  B O O K  */
+
 @font-face {
-  font-family: 'BitcountMonoSingleLightPlus';
-  src: url('../fontsfull/Bitcount_Mono_Single-Light_Plus.ttf');
+  font-family: 'BitcountMonoSingleBookCircle';
+  src: url('../fontsfull/Bitcount_Mono_Single-Book_Circle.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'BitcountMonoSingleLightPlus';
-  src: url('../fontsfull/Bitcount_Mono_Single-Light_Plus_Italic.ttf');
+  font-family: 'BitcountMonoSingleBookCircle';
+  src: url('../fontsfull/Bitcount_Mono_Single-Book_Circle_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 
 @font-face {
-  font-family: 'BitcountMonoSingleLightSquare';
-  src: url('../fontsfull/Bitcount_Mono_Single-Light_Square.ttf');
+  font-family: 'BitcountMonoSingleBookSquare';
+  src: url('../fontsfull/Bitcount_Mono_Single-Book_Square.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'BitcountMonoSingleLightSquare';
-  src: url('../fontsfull/Bitcount_Mono_Single-Light_Square_Italic.ttf');
+  font-family: 'BitcountMonoSingleBookSquare';
+  src: url('../fontsfull/Bitcount_Mono_Single-Book_Square_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 
 @font-face {
-  font-family: 'BitcountMonoSingleLightCircle';
+  font-family: 'BitcountMonoSingleBookPlus';
+  src: url('../fontsfull/Bitcount_Mono_Single-Book_Plus.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoSingleBookPlus';
+  src: url('../fontsfull/Bitcount_Mono_Single-Book_Plus_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoSingleBookLineCircle';
+  src: url('../fontsfull/Bitcount_Mono_Single-Book_Line_Circle.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoSingleBookLineCircle';
+  src: url('../fontsfull/Bitcount_Mono_Single-Book_Line_Circle_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoSingleBookLineSquare';
+  src: url('../fontsfull/Bitcount_Mono_Single-Book_Line_Square.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoSingleBookLineSquare';
+  src: url('../fontsfull/Bitcount_Mono_Single-Book_Line_Square_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+/*  R E G U L A R  */
+
+@font-face {
+  font-family: 'BitcountMonoSingleRegularCircle';
+  src: url('../fontsfull/Bitcount_Mono_Single-Circle.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoSingleRegularCircle';
+  src: url('../fontsfull/Bitcount_Mono_Single-Circle_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoSingleRegularSquare';
+  src: url('../fontsfull/Bitcount_Mono_Single-Square.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoSingleRegularSquare';
+  src: url('../fontsfull/Bitcount_Mono_Single-Square_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoSingleRegularPlus';
+  src: url('../fontsfull/Bitcount_Mono_Single-Plus.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoSingleRegularPlus';
+  src: url('../fontsfull/Bitcount_Mono_Single-Plus_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoSingleRegularLineCircle';
   src: url('../fontsfull/Bitcount_Mono_Single-Line_Circle.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'BitcountMonoSingleLightCircle';
+  font-family: 'BitcountMonoSingleRegularLineCircle';
   src: url('../fontsfull/Bitcount_Mono_Single-Line_Circle_Italic.ttf');
   font-weight: normal;
   font-style: italic;
@@ -677,18 +571,20 @@
 
 
 @font-face {
-  font-family: 'BitcountMonoSingleLineSquare';
+  font-family: 'BitcountMonoSingleRegularLineCircle';
   src: url('../fontsfull/Bitcount_Mono_Single-Line_Square.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'BitcountMonoSingleLineSquare';
+  font-family: 'BitcountMonoSingleRegularLineCircle';
   src: url('../fontsfull/Bitcount_Mono_Single-Line_Square_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
+
+/*  M E D I U M */
 
 @font-face {
   font-family: 'BitcountMonoSingleMediumCircle';
@@ -699,6 +595,34 @@
 @font-face {
   font-family: 'BitcountMonoSingleMediumCircle';
   src: url('../fontsfull/Bitcount_Mono_Single-Medium_Circle_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoSingleMediumSquare';
+  src: url('../fontsfull/Bitcount_Mono_Single-Medium_Square.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoSingleMediumSquare';
+  src: url('../fontsfull/Bitcount_Mono_Single-Medium_Square_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoSingleMediumPlus';
+  src: url('../fontsfull/Bitcount_Mono_Single-Medium_Plus.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoSingleMediumPlus';
+  src: url('../fontsfull/Bitcount_Mono_Single-Medium_Plus_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
@@ -732,72 +656,109 @@
 }
 
 
+/*  B O L D */
+
 @font-face {
-  font-family: 'BitcountMonoSingleMediumPlus';
-  src: url('../fontsfull/Bitcount_Mono_Single-Medium_Plus.ttf');
+  font-family: 'BitcountMonoSingleBoldCircle';
+  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Circle.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'BitcountMonoSingleMediumPlus';
-  src: url('../fontsfull/Bitcount_Mono_Single-Medium_Plus_Italic.ttf');
+  font-family: 'BitcountMonoSingleBoldCircle';
+  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Circle_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 
 @font-face {
-  font-family: 'BitcountMonoSingleMediumSquare';
-  src: url('../fontsfull/Bitcount_Mono_Single-Medium_Square.ttf');
+  font-family: 'BitcountMonoSingleBoldSquare';
+  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Square.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'BitcountMonoSingleMediumSquare';
-  src: url('../fontsfull/Bitcount_Mono_Single-Medium_Square.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'BitcountMonoSinglePlus';
-  src: url('../fontsfull/Bitcount_Mono_Single-Plus.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BitcountMonoSinglePlus';
-  src: url('../fontsfull/Bitcount_Mono_Single-Plus_Italic.ttf');
+  font-family: 'BitcountMonoSingleBoldSquare';
+  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Square_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 
 @font-face {
-  font-family: 'BitcountMonoSingleSquare';
-  src: url('../fontsfull/Bitcount_Mono_Single-Square.ttf');
+  font-family: 'BitcountMonoSingleBoldPlus';
+  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Plus.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'BitcountMonoSingleSquare';
-  src: url('../fontsfull/Bitcount_Mono_Single-Square_Italic.ttf');
+  font-family: 'BitcountMonoSingleBoldPlus';
+  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Plus_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoSingleBoldLineCircle';
+  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Line_Circle.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoSingleBoldLineCircle';
+  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Line_Circle_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BitcountMonoSingleBoldLineSquare';
+  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Line_Square.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BitcountMonoSingleBoldLineSquare';
+  src: url('../fontsfull/Bitcount_Mono_Single-Bold_Line_Square_Italic.ttf');
   font-weight: normal;
   font-style: italic;
 }
 
 
 
-/* Original template icon font */
+/* O T H E R */
 
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('../fontsfull/fontawesome-webfont.eot?v=4.5.0');
-  src: url('../fontsfull/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('../fontsfull/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('../fontsfull/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('../fontsfull/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('../fontsfull/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+  font-family: 'BitcountPropDoubleRegularCircle';
+  src: url('../fontsfull/Bitcount_Prop_Double-Circle.ttf');
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'BitcountPropSingleRegularCircle';
+  src: url('../fontsfull/Bitcount_Prop_Single-Circle.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BitcountGridDoubleRegularCircle';
+  src: url('../fontsfull/Bitcount_Grid_Double-Circle.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BitcountGridSingleRegularCircle';
+  src: url('../fontsfull/Bitcount_Grid_Single-Circle.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;

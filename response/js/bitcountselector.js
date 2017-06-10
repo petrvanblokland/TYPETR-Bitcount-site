@@ -4,25 +4,23 @@ function getRandomColor() {
         [0, 0, 0, opacity],
         [1, 0.9*0.1*Math.random(), 1, opacity],
         [0.5, 0.9*0.1*Math.random(), 1, opacity],
-        [0.9*0.1*Math.random(), 1, 1, opacity],
-        [0.9*0.1*Math.random(), 0.5, 1, opacity],
-        /*[1, 1, 0.9*0.1*Math.random(), opacity],  */                   
+        [0.1+0.9*Math.random(), 1, 1, opacity],
+        [0.1+0.9*Math.random(), 0.5, 1, opacity],
+        [0, 0, 0.1*0.9*Math.random(), opacity],                 
         /*[0.6, 1, 0.9*0.1*Math.random(), opacity], */
 
-        [0, 0, 0, opacity],
         [1, 0.9*0.1*Math.random(), 1, opacity],
         [0.5, 0.9*0.1*Math.random(), 1, opacity],
-        [0.9*0.1*Math.random(), 1, 1, opacity],
-        [0.9*0.1*Math.random(), 0.5, 1, opacity],
-        /*[1, 1, 0.9*0.1*Math.random(), opacity],  */                   
+        [0.1+0.9*Math.random(), 1, 1, opacity],
+        [0.1+0.9*Math.random(), 0.5, 1, opacity],
+        [0, 0, 0.1*0.9*Math.random(), opacity],                 
         /*[0.6, 1, 0.9*0.1*Math.random(), opacity],*/
 
-        [0, 0, 0, opacity],
         [1, 0.9*0.1*Math.random(), 1, opacity],
         [0.5, 0.9*0.1*Math.random(), 1, opacity],
-        [0.9*0.1*Math.random(), 1, 1, opacity],
-        [0.9*0.1*Math.random(), 0.5, 1, opacity],
-        /*[1, 1, 0.9*0.1*Math.random(), opacity],  */                   
+        [0.9+0.1*Math.random(), 1, 1, opacity],
+        [0.9+0.1*Math.random(), 0.5, 1, opacity],
+        [0, 0, 0.1*0.9*Math.random(), opacity],                 
         /*[0.6, 1, 0.9*0.1*Math.random(), opacity],*/
     ];
     var color = colors[Math.floor(Math.random()*colors.length)];
