@@ -571,13 +571,13 @@
 
 
 @font-face {
-  font-family: 'BitcountMonoSingleRegularLineCircle';
+  font-family: 'BitcountMonoSingleRegularLineSquare';
   src: url('../fontsfull/Bitcount_Mono_Single-Line_Square.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'BitcountMonoSingleRegularLineCircle';
+  font-family: 'BitcountMonoSingleRegularLineSquare';
   src: url('../fontsfull/Bitcount_Mono_Single-Line_Square_Italic.ttf');
   font-weight: normal;
   font-style: italic;
