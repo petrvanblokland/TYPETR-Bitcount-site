@@ -134,6 +134,7 @@ function selectShift(flag){
         document.getElementById('selectShift').style['border'] = 'none';
         document.getElementById('selectNoShift').style['border'] = border;
     }
+    makeNewLayers();
 }
 
 function useShortSample(isShort){
