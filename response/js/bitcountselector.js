@@ -1,30 +1,34 @@
+
+function rgbToHex(r, g, b) {
+    return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+}
 function getRandomColor() {
     var opacity = 0.8 + 0.2*Math.random();
     var colors = [
         [0, 0, 0, opacity],
-        [1, 0.9*0.1*Math.random(), 1, opacity],
-        [0.5, 0.9*0.1*Math.random(), 1, opacity],
+        [1, 0.1+0.9*Math.random(), 1, opacity],
+        [0.5, 0.1+0.9*Math.random(), 1, opacity],
         [0.1+0.9*Math.random(), 1, 1, opacity],
         [0.1+0.9*Math.random(), 0.5, 1, opacity],
-        [0, 0, 0.1*0.9*Math.random(), opacity],                 
+        [0, 0, 0.1+0.9*Math.random(), opacity],                 
         /*[0.6, 1, 0.9*0.1*Math.random(), opacity], */
 
-        [1, 0.9*0.1*Math.random(), 1, opacity],
-        [0.5, 0.9*0.1*Math.random(), 1, opacity],
+        [1, 0.1+0.9*Math.random(), 1, opacity],
+        [0.5, 0.1+0.9*Math.random(), 1, opacity],
         [0.1+0.9*Math.random(), 1, 1, opacity],
         [0.1+0.9*Math.random(), 0.5, 1, opacity],
-        [0, 0, 0.1*0.9*Math.random(), opacity],                 
+        [0, 0, 0.1+0.9*Math.random(), opacity],                 
         /*[0.6, 1, 0.9*0.1*Math.random(), opacity],*/
 
-        [1, 0.9*0.1*Math.random(), 1, opacity],
-        [0.5, 0.9*0.1*Math.random(), 1, opacity],
+        [1, 0.1+0.9*Math.random(), 1, opacity],
+        [0.5, 0.1+0.9*Math.random(), 1, opacity],
         [0.9+0.1*Math.random(), 1, 1, opacity],
         [0.9+0.1*Math.random(), 0.5, 1, opacity],
-        [0, 0, 0.1*0.9*Math.random(), opacity],                 
+        [0, 0, 0.1+0.9*Math.random(), opacity],                 
         /*[0.6, 1, 0.9*0.1*Math.random(), opacity],*/
     ];
     var color = colors[Math.floor(Math.random()*colors.length)];
-    return '#' + Math.floor(color[0]*255).toString(16) + Math.floor(color[1]*255).toString(16) + Math.floor(color[2]*255).toString(16);
+    return rgbToHex(Math.floor(color[0]*255), Math.floor(color[1]*255), Math.floor(color[2]*255));
 }
 
 

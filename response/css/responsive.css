@@ -33,7 +33,7 @@
 @media (max-width: 767px) {
 
 	body{
-		font-family: 'BitcountSingle', sans-serif;
+		font-family: 'BitcountMonoSingleRegularCircle', sans-serif;
 		color: #8a8a8a;
 		font-size: 15px;
 		line-height:1.6em;
@@ -81,7 +81,7 @@
 		text-align: left;
 	}
 	.sider_text p {
-		font-family: "BitcountPropSingle";
+		font-family: "BitcountPropSingleRegularCircle";
 		color: #fff;
 		font-size: 1.1em;
 		line-height: 1.3em;
