@@ -289,9 +289,11 @@
 								<span onClick="selectLayers(0);">Click to select the number of layers.</span>
 							</p>		
 							<p>
+								<span id="selectOpacity" onClick="selectOpacity(true);">Opacity</span>
+								<span id="selectNoOpacity" onClick="selectOpacity(false);">No opacity</span><br/>
 								<span id="selectShift" onClick="selectShift(true);">Shift</span>
-								<span id="selectNoShift" onClick="selectShift(false);">No shift</span>
-								<span onClick="selectShift(-1);">Click to toggle the shift selection.</span>
+								<span id="selectNoShift" onClick="selectShift(false);">No shift</span><br/>
+								<span onClick="selectShift(-1);selectOpacity(-1);">Click to toggle the shift and opacity options.</span>
 							</p>
 						</div>
 					</div>					
@@ -303,7 +305,9 @@
 						</div>
 						<div onClick="toggleRomanItalic();" class="service_text extended">
 							<h4>Roman or italic</h4>
-							<p>Click to toggle between <span id="selectRoman">Roman</span> and <span id="selectItalic">Italic</span>.</p>	
+							<p>Click to toggle between <span id="selectRoman">Roman</span> and <span id="selectItalic">Italic</span>.<br/>
+							<p>Click to toggle between <span id="selectLowercase">Lower case</span> and <span id="selectSmallcaps">Small&nbsp;caps</span>.
+							</p>	
 						</div>
 					</div>					
 				</div>					
@@ -620,7 +624,7 @@ The base package of Bitcount includes four sizes/weight for each unique pixel sh
 				<div class="col-md-8 center-block">
 					<div class="section_title text-center">						
 						<h1>Buy</h1>
-						<p>
+						<p class="extended">
 							The standard desktop license for a single user is $10.10 per font.
 							If you need to layer Bitcount, the entire package of 300 fonts (three spacing types, five weights, five pixel sizes, Single and Double variants, and roman and italic styles) is a much better deal!
 						</p>
@@ -1055,9 +1059,8 @@ The base package of Bitcount includes four sizes/weight for each unique pixel sh
 						<h1 class="diap">A word of thanks</h1>						
 						<p class="extended">
 							Petr van Blokland would like to thank Gerrit Noordzij, who, in the 1970s, initiated the concept that contrast in type is the factor that holds everything together, countering the then-popular notion that contrast is a luxury to be removed from “simple” type whenever possible. Special gratitude goes out to Van Blokland’s partner, Claudia Mens, who has been a constant and constructively critical companion reflecting on every design question since 1980. He also extends many thanks to his Type Network cofounding partners — David Berlow, Sam Berlow, and Roger Black — and the Type Network production and marketing teams for making the release of Bitcount possible.
-						<br/><br/>
-						Bitcount 3D image renders by Mohamed Amine Belcaid. 3D laser cut outs by Lauren Dreier.
-						
+							<br/><br/>
+							Bitcount 3D image renders by Mohamed Amine Belcaid. 3D laser cut outs by Lauren Dreier.
 						</p>
 						<div class="divided"></div>
 					</div>					
@@ -1075,7 +1078,7 @@ The base package of Bitcount includes four sizes/weight for each unique pixel sh
  			<div class="cont_bottom">
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<p class="copyright">2017 &copy; Copyright – <a href="mailto:info@typenetwork">Contact us</a> – All rights reserved </p>
+						<p class="copyright extended">2017 &copy; Copyright – <a href="mailto:info@typenetwork">Contact us</a> – All rights reserved </p>
 					</div>
 				</div>		
 			</div>

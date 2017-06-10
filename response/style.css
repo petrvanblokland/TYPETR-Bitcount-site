@@ -110,7 +110,7 @@ div#css_sample {
 	padding: 2px 2px 1px 3px;
 }
 #selectRoman, #selectItalic, #selectLayer1, #selectLayer2, #selectLayer3, #selectLayer4, 
-#selectShift, #selectNoShift {
+#selectShift, #selectNoShift, #selectOpacity, #selectNoOpacity {
 	border: none;
 	padding: 2px 2px 1px 3px;	
 }

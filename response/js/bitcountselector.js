@@ -3,7 +3,7 @@ function rgbToHex(r, g, b) {
     return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
 }
 function getRandomOpacity(start) {
-    return Math.floor(255*(start + (1-start)*Math.random()));
+    return start + (1-start)*Math.random();
 }
 function getRandomColor() {
     var colors = [
@@ -124,6 +124,7 @@ var stemType = 'double';
 var posture = 'italic'; /* Will toggle on init to roman. */
 var border = '1px solid #0000FF';
 var doShift = true;
+var doOpacity = true;
 
 function selectShift(flag){
     if (flag == -1)
@@ -139,13 +140,27 @@ function selectShift(flag){
     makeNewLayers();
 }
 
+function selectOpacity(flag){
+    if (flag == -1)
+        flag = !doOpacity;
+    doOpacity = flag;
+    if (doOpacity){
+        document.getElementById('selectOpacity').style['border'] = border;
+        document.getElementById('selectNoOpacity').style['border'] = 'none';
+    } else {        
+        document.getElementById('selectOpacity').style['border'] = 'none';
+        document.getElementById('selectNoOpacity').style['border'] = border;
+    }
+    makeNewLayers();
+}
+
 function useShortSample(isShort){
     var s;
     if (isShort){
-        // the width of browser is more then 700px
+        // the width of browser is more then 991px
         s = 'Bit</br>';
     } else
-        // the width of browser is less then 700px
+        // the width of browser is less then 991px
         s = 'Bitcount</br>';
 
     document.getElementById('player1').innerHTML = s;
@@ -224,7 +239,8 @@ function makeNewLayers(){
 
     var shifts = [0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,3,4,5,6];
 
-    var e, c, f, o;
+    var e, c, f;
+    var o = 1; /* In case no opacity */
     var x = 0;
     var y = 0;
     e = document.getElementById('playroom_content')
@@ -232,7 +248,9 @@ function makeNewLayers(){
 
     e = document.getElementById('player1');
     e.style.color = c = getRandomColor();
-    e.style.opacity = o = getRandomOpacity(0.8);
+    if (doOpacity)
+        o = getRandomOpacity(0.8).toFixed(2);
+    e.style.opacity = o;
     e.style.fontFamily = f = fontNamesForground[randomNumber1];
     e.style.fontStyle = posture;
     if (doShift){
@@ -245,7 +263,9 @@ function makeNewLayers(){
 
     e = document.getElementById('player2');
     e.style.color = c = getRandomColor();
-    e.style.opacity = o = getRandomOpacity(0.8);
+    if (doOpacity)
+        o = getRandomOpacity(0.8).toFixed(2);
+    e.style.opacity = o;
     e.style.fontFamily = f = fontNamesForground[randomNumber2];
     e.style.fontStyle = posture;
     if (layerCnt >= 2){
@@ -262,7 +282,9 @@ function makeNewLayers(){
     
     e = document.getElementById('player3');
     e.style.color = c = getRandomColor();
-    e.style.opacity = o = getRandomOpacity(0.5);
+    if (doOpacity)
+        o = getRandomOpacity(0.6).toFixed(2);
+    e.style.opacity = o;
     e.style.fontFamily = f = fontNames[randomNumber3];
     e.style.fontStyle = posture;
     if (layerCnt >= 3){
@@ -279,7 +301,9 @@ function makeNewLayers(){
     
     e = document.getElementById('player4');
     e.style.color = c = getRandomColor();
-    e.style.opacity = o = getRandomOpacity(0.5);
+    if (doOpacity)
+        o = getRandomOpacity(0.6).toFixed(2);
+    e.style.opacity = o;
     e.style.fontFamily = f = fontNames[randomNumber4];
     e.style.fontStyle = posture;
     if (layerCnt >= 4){
@@ -300,7 +324,8 @@ function makeNewLayers(){
 
 useShortSample($(window).width() < 991);
 toggleRomanItalic();
-selectShift(1);
+selectOpacity(true);
+selectShift(true);
 selectStem('double');
 selectLayers(4);
 makeNewLayers();
