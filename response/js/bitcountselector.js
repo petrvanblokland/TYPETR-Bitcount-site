@@ -121,6 +121,20 @@ var layerCnt = 4;
 var stemType = 'double';
 var posture = 'italic'; /* Will toggle on init to roman. */
 var border = '1px solid #0000FF';
+var doShift = true;
+
+function selectShift(flag){
+    if (flag == -1)
+        flag = !doShift;
+    doShift = flag;
+    if (doShift){
+        document.getElementById('selectShift').style['border'] = border;
+        document.getElementById('selectNoShift').style['border'] = 'none';
+    } else {        
+        document.getElementById('selectShift').style['border'] = 'none';
+        document.getElementById('selectNoShift').style['border'] = border;
+    }
+}
 
 function useShortSample(isShort){
     var s;
@@ -207,7 +221,9 @@ function makeNewLayers(){
 
     var shifts = [0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,3,4,5,6];
 
-    var e, c1, c2, c3, c4, f1, f2, f3, f4, x, y;
+    var e, c1, c2, c3, c4, f1, f2, f3, f4;
+    var x = 0;
+    var y = 0;
     e = document.getElementById('playroom_content')
     /*e.style.lineHeight = Math.random()*0.02; /*0.0;*/
 
@@ -215,8 +231,10 @@ function makeNewLayers(){
     e.style.color = c1 = getRandomColor();
     e.style.fontFamily = f1 = fontNamesForground[randomNumber1];
     e.style.fontStyle = posture;
-    x = shifts[Math.floor(Math.random()*shifts.length)];
-    y = shifts[Math.floor(Math.random()*shifts.length)];
+    if (doShift){
+        x = shifts[Math.floor(Math.random()*shifts.length)];
+        y = shifts[Math.floor(Math.random()*shifts.length)];
+    }
     e.style.left = x+'px';
     e.style.top = y+'px';
     css = ".layer1 {font-family:"+f1+"; style:"+posture+"; color:"+c1+"; left:"+x+"px; top:"+y+"px;}<br>";
@@ -226,8 +244,10 @@ function makeNewLayers(){
     e.style.fontFamily = f2 = fontNamesForground[randomNumber2];
     e.style.fontStyle = posture;
     if (layerCnt >= 2){
-        x += shifts[Math.floor(Math.random()*shifts.length)];
-        y += shifts[Math.floor(Math.random()*shifts.length)];
+        if (doShift){
+            x += shifts[Math.floor(Math.random()*shifts.length)];
+            y += shifts[Math.floor(Math.random()*shifts.length)];
+        }
         e.style.left = x+'px';
         e.style.top = y+'px';
         e.style.display = 'block';
@@ -240,8 +260,10 @@ function makeNewLayers(){
     e.style.fontFamily = f3 = fontNames[randomNumber3];
     e.style.fontStyle = posture;
     if (layerCnt >= 3){
-        x += shifts[Math.floor(Math.random()*shifts.length)];
-        y += shifts[Math.floor(Math.random()*shifts.length)];
+        if (doShift){
+            x += shifts[Math.floor(Math.random()*shifts.length)];
+            y += shifts[Math.floor(Math.random()*shifts.length)];
+        }
         e.style.left = x+'px';
         e.style.top = y+'px';
         e.style.display = 'block';
@@ -254,8 +276,10 @@ function makeNewLayers(){
     e.style.fontFamily = f4 = fontNames[randomNumber4];
     e.style.fontStyle = posture;
     if (layerCnt >= 4){
-        x += shifts[Math.floor(Math.random()*shifts.length)];
-        y += shifts[Math.floor(Math.random()*shifts.length)];
+        if (doShift){
+            x += shifts[Math.floor(Math.random()*shifts.length)];
+            y += shifts[Math.floor(Math.random()*shifts.length)];
+        }
         e.style.left = x+'px';
         e.style.top = y+'px';
         e.style.display = 'block';
@@ -269,6 +293,7 @@ function makeNewLayers(){
 
 useShortSample($(window).width() < 991);
 toggleRomanItalic();
+selectShift(1);
 selectStem('double');
 selectLayers(4);
 makeNewLayers();

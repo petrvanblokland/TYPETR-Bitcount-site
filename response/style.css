@@ -68,7 +68,7 @@ h1 {
 	height:220px;
 	width: 100%;
 	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
-	padding: 0 0 50px 0px ;
+	padding: 0 0 50px 10px ;
 	z-index: 30;
 }
 #player2 {
@@ -76,7 +76,7 @@ h1 {
 	height:220px;
 	width: 100%;
 	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
-	padding: 0 0 50px 0px ;
+	padding: 0 0 50px 10px ;
 	z-index: 20;
 }
 #player3 {
@@ -84,7 +84,7 @@ h1 {
 	height:220px;
 	width: 100%;
 	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
-	padding: 0 0 50px 0px ;
+	padding: 0 0 50px 10px ;
 	z-index: 10;
 }
 #player4 {
@@ -92,7 +92,7 @@ h1 {
 	height:220px;
 	width: 100%;
 	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
-	padding: 0 0 50px 0px ;
+	padding: 0 0 50px 10px ;
 	z-index: 5;
 }
 div#css_sample {

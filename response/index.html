@@ -251,7 +251,7 @@
 							+
 						</div>
 						<div onClick="makeNewLayers();" class="service_text">
-							<h4>New random layers</h4>
+							<h4 class="extended">New random layers</h4>
 							<p class="extended">Click to select a new set of random layers and colors. Use the HTML/CSS code below to recreate the current combination in your website.</p>
 						</div>							
 					</div>		
@@ -288,6 +288,11 @@
 								<span id="selectLayer4" onClick="selectLayers(4);">4&nbsp;layers</span>
 								<span onClick="selectLayers(0);">Click to select the number of layers.</span>
 							</p>		
+							<p>
+								<span id="selectShift" onClick="selectShift(true);">Shift</span>
+								<span id="selectNoShift" onClock="selectShift(false);">No shift</span>
+								<span onClick="selectShift(-1);">Click to toggle the shift selection.</span>
+							</p>
 						</div>
 					</div>					
 								
@@ -621,7 +626,7 @@ The base package of Bitcount includes four sizes/weight for each unique pixel sh
 			<div class="col-md-4 col-sm-6">
 				<div class="single_pricing">
 					<header class="header" >
-						<h4 class="plan_name">Bitcount full package<br/>(300 fonts)</h4>
+						<h4 class="plan_name">Full package<br/>(300 fonts)</h4>
 						<div class="price extended">
 							<sup class="currency">$</sup>
 							<div class="amount">101</div>
@@ -630,12 +635,12 @@ The base package of Bitcount includes four sizes/weight for each unique pixel sh
 					</header>
 					
 					<ul class="pri_list">
-						<li>five weights</li>
-						<li>three pixels shapes</li>
-						<li>three spacing types</li>
+						<li>Five weights</li>
+						<li>Three pixels shapes</li>
+						<li>Three spacing types</li>
 						<li>Single and Double variants</li>
-						<li>roman and italic</li>
-						<li>many features</li>
+						<li>Roman and Italic</li>
+						<li>Many features for Mono, Grid and Prop</li>
 					</ul>
 					
 					<footer class="footer extended" >
@@ -660,8 +665,8 @@ The base package of Bitcount includes four sizes/weight for each unique pixel sh
 						<li>One of five pixel shapes</li>
 						<li>One of three spacing types</li>
 						<li>Single or Double</li>
-						<li>roman or italic</li>
-						<li>features vary according to font selection</li>
+						<li>Roman or Italic</li>
+						<li>Features vary according to font selection</li>
 					</ul>
 					
 					<footer class="footer extended" style="background-image: url(img/slider/slider_02/0.jpg)">
@@ -673,21 +678,21 @@ The base package of Bitcount includes four sizes/weight for each unique pixel sh
 			<div class="col-md-4 col-sm-6">
 				<div class="single_pricing">
 					<header class="header">
-						<h4 class="plan_name">Custom logo/pixel shapes</h4>
+						<h4 class="plan_name">Custom logo/pixels</h4>
 						<div class="price extended">
 							<sup class="currency">$</sup>
 							<div class="amount">Ask</div>
-							<div class="period">License from <a href="mailto:info@typenetwork.com">info@typenetwork.com</a></div>
+							<div class="period"><a href="mailto:info@typenetwork.com">info@typenetwork.com</a></div>
 						</div>
 					</header>
 					
 					<ul class="pri_list">
-						<li>custom weights</li>
-						<li>other pixels shapes</li>
-						<li>any type of spacing</li>
+						<li>Custom weights</li>
+						<li>Other pixels shapes</li>
+						<li>Any type of spacing</li>
 						<li>Single and Double variants</li>
-						<li>roman and italic</li>
-						<li>features customized upon request</li>
+						<li>Roman and Italic</li>
+						<li>Features customized upon request</li>
 					</ul>
 					
 					<footer class="footer extended">
@@ -1053,69 +1058,22 @@ The base package of Bitcount includes four sizes/weight for each unique pixel sh
 				</div>			
 			</div>	
 
-  	<div class="cont_bottom">
+ 			<div class="row">
+				<div class="col-md-8 center-block">
+					<div class="section_title text-center">
+						<img src="img/pixelshapes/AllPixelsOverlayA_8.gif" alt="AllPixelsOverlayA_8.gif"/>
+					</div>
+				</div>
+			</div>
+
+ 			<div class="cont_bottom">
 				<div class="row">
 					<div class="col-md-12 text-center">
-							<ul class="footer_social_link">
-								<li><a href="https://twitter.com/petrvanblokland" class="tw_icon"><i class="fa fa-twitter"></i></a></li>
-							</ul>
-
-							<p class="copyright">2017 &copy; Copyright – <a href="mailto:info@typenetwork">Contact us</a> – All rights reserved </p>
+						<p class="copyright">2017 &copy; Copyright – <a href="mailto:info@typenetwork">Contact us</a> – All rights reserved </p>
 					</div>
 				</div>		
 			</div>
 
-
-			<!--<div class="row">
-				<div class="col-sm-7">
-					<div class="left">					
-						<form action="#" id="contact_form">
-							<div class="row">	
-								<div class="col-sm-6">
-									<div class="name">							
-										<div class="form-group">
-											<input type="text" name="name" class="form-control" placeholder="Enter Full Name" id="name"/>
-											<span class="cont_icon_wrap"><i class="fa fa-user con_icon"></i></span>
-										</div>				
-									</div>
-								</div>								
-								
-								<div class="col-sm-6">
-									<div class="email">					
-										<div class="form-group">
-											<input type="text" name="email" class="form-control" placeholder="Enter Email Address" id="email"/>
-											<span class="cont_icon_wrap"><i class="fa fa-envelope-o con_icon"></i></span>
-										</div>		
-									</div>
-								</div>								
-								
-								<div class="col-sm-12">
-									<div class="message">	
-										<div class="form-group">
-											<textarea name="message" id="message" placeholder="Write your Message !" class="form-control"></textarea>
-											<span class="cont_icon_wrap"><i class="fa fa-pencil con_icon"></i></span>
-										</div>
-										
-									</div>
-								</div>
-								<div class="col-md-12 text-left">
-									<input type="submit" class="radon send_message" value="Send Message" />
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>				
-				
-				<div class="col-sm-5">
-					<div class="right">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
-						<p class="location"><span class="icon-wrap"><i class="fa fa-map-marker"></i></span> 4360 Calvin Street Baltimore, MD 21202 </p>		
-						<p class="phone"><span class="icon-wrap"><i class="fa fa-phone"></i></span> Telephone: (801) 2345 - 6789 <br /> Fax: (801) 2345 - 6789  </p>		
-						<p class="web_eamil"><span class="icon-wrap"><i class="fa fa-envelope-o"></i></span> Email: youremail@email.com <br />Website: www.yourwebsitename.com </p>		
-					</div>
-				</div>
-			</div>
-			-->
 	
 		</div>
 	</section>
