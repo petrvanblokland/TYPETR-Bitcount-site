@@ -2,29 +2,31 @@
 function rgbToHex(r, g, b) {
     return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
 }
+function getRandomOpacity(start) {
+    return Math.floor(255*(start + (1-start)*Math.random()));
+}
 function getRandomColor() {
-    var opacity = 0.8 + 0.2*Math.random();
     var colors = [
-        [0, 0, 0, opacity],
-        [1, 0.1+0.9*Math.random(), 1, opacity],
-        [0.5, 0.1+0.9*Math.random(), 1, opacity],
-        [0.1+0.9*Math.random(), 1, 1, opacity],
-        [0.1+0.9*Math.random(), 0.5, 1, opacity],
-        [0, 0, 0.1+0.9*Math.random(), opacity],                 
+        [0, 0, 0],
+        [1, 0.1+0.9*Math.random(), 1],
+        [0.5, 0.1+0.9*Math.random(), 1],
+        [0.1+0.9*Math.random(), 1, 1],
+        [0.1+0.9*Math.random(), 0.5, 1],
+        [0, 0, 0.1+0.9*Math.random()],                 
         /*[0.6, 1, 0.9*0.1*Math.random(), opacity], */
 
-        [1, 0.1+0.9*Math.random(), 1, opacity],
-        [0.5, 0.1+0.9*Math.random(), 1, opacity],
-        [0.1+0.9*Math.random(), 1, 1, opacity],
-        [0.1+0.9*Math.random(), 0.5, 1, opacity],
-        [0, 0, 0.1+0.9*Math.random(), opacity],                 
+        [1, 0.1+0.9*Math.random(), 1],
+        [0.5, 0.1+0.9*Math.random(), 1],
+        [0.1+0.9*Math.random(), 1, 1],
+        [0.1+0.9*Math.random(), 0.5, 1],
+        [0, 0, 0.1+0.9*Math.random()],                 
         /*[0.6, 1, 0.9*0.1*Math.random(), opacity],*/
 
-        [1, 0.1+0.9*Math.random(), 1, opacity],
-        [0.5, 0.1+0.9*Math.random(), 1, opacity],
-        [0.9+0.1*Math.random(), 1, 1, opacity],
-        [0.9+0.1*Math.random(), 0.5, 1, opacity],
-        [0, 0, 0.1+0.9*Math.random(), opacity],                 
+        [1, 0.1+0.9*Math.random(), 1],
+        [0.5, 0.1+0.9*Math.random(), 1],
+        [0.9+0.1*Math.random(), 1, 1],
+        [0.9+0.1*Math.random(), 0.5, 1],
+        [0, 0, 0.1+0.9*Math.random()],                 
         /*[0.6, 1, 0.9*0.1*Math.random(), opacity],*/
     ];
     var color = colors[Math.floor(Math.random()*colors.length)];
@@ -222,15 +224,16 @@ function makeNewLayers(){
 
     var shifts = [0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,3,4,5,6];
 
-    var e, c1, c2, c3, c4, f1, f2, f3, f4;
+    var e, c, f, o;
     var x = 0;
     var y = 0;
     e = document.getElementById('playroom_content')
     /*e.style.lineHeight = Math.random()*0.02; /*0.0;*/
 
     e = document.getElementById('player1');
-    e.style.color = c1 = getRandomColor();
-    e.style.fontFamily = f1 = fontNamesForground[randomNumber1];
+    e.style.color = c = getRandomColor();
+    e.style.opacity = o = getRandomOpacity(0.8);
+    e.style.fontFamily = f = fontNamesForground[randomNumber1];
     e.style.fontStyle = posture;
     if (doShift){
         x = shifts[Math.floor(Math.random()*shifts.length)];
@@ -238,11 +241,12 @@ function makeNewLayers(){
     }
     e.style.left = x+'px';
     e.style.top = y+'px';
-    css = ".layer1 {font-family:"+f1+"; style:"+posture+"; color:"+c1+"; left:"+x+"px; top:"+y+"px;}<br>";
+    css = ".layer1 {font-family:"+f+"; style:"+posture+"; color:"+c+"; opacity:"+o+"; left:"+x+"px; top:"+y+"px;}<br>";
 
     e = document.getElementById('player2');
-    e.style.color = c2 = getRandomColor();
-    e.style.fontFamily = f2 = fontNamesForground[randomNumber2];
+    e.style.color = c = getRandomColor();
+    e.style.opacity = o = getRandomOpacity(0.8);
+    e.style.fontFamily = f = fontNamesForground[randomNumber2];
     e.style.fontStyle = posture;
     if (layerCnt >= 2){
         if (doShift){
@@ -252,13 +256,14 @@ function makeNewLayers(){
         e.style.left = x+'px';
         e.style.top = y+'px';
         e.style.display = 'block';
-        css += ".layer2 {font-family:"+f2+"; style:"+posture+"; color:"+c2+"; left:"+x+"px; top:"+y+"px;}<br>";
+        css += ".layer2 {font-family:"+f+"; style:"+posture+"; color:"+c+"; opacity:"+o+"; left:"+x+"px; top:"+y+"px;}<br>";
     } else
         e.style.display = 'none';
     
     e = document.getElementById('player3');
-    e.style.color = c3 = getRandomColor();
-    e.style.fontFamily = f3 = fontNames[randomNumber3];
+    e.style.color = c = getRandomColor();
+    e.style.opacity = o = getRandomOpacity(0.5);
+    e.style.fontFamily = f = fontNames[randomNumber3];
     e.style.fontStyle = posture;
     if (layerCnt >= 3){
         if (doShift){
@@ -268,13 +273,14 @@ function makeNewLayers(){
         e.style.left = x+'px';
         e.style.top = y+'px';
         e.style.display = 'block';
-        css += ".layer3 {font-family:"+f3+"; style:"+posture+"; color:"+c3+"; left:"+x+"px; top:"+y+"px;}<br>";
+        css += ".layer3 {font-family:"+f+"; style:"+posture+"; color:"+c+"; opacity:"+o+"; left:"+x+"px; top:"+y+"px;}<br>";
     } else
         e.style.display = 'none';
     
     e = document.getElementById('player4');
-    e.style.color = c4 = getRandomColor();
-    e.style.fontFamily = f4 = fontNames[randomNumber4];
+    e.style.color = c = getRandomColor();
+    e.style.opacity = o = getRandomOpacity(0.5);
+    e.style.fontFamily = f = fontNames[randomNumber4];
     e.style.fontStyle = posture;
     if (layerCnt >= 4){
         if (doShift){
@@ -284,7 +290,7 @@ function makeNewLayers(){
         e.style.left = x+'px';
         e.style.top = y+'px';
         e.style.display = 'block';
-        css += ".layer4 {font-family:"+f4+"; style:"+posture+"; color:"+c4+"; left:"+x+"px; top:"+y+"px;}<br>";
+        css += ".layer4 {font-family:"+f+"; style:"+posture+"; color:"+c+"; opacity:"+o+"; left:"+x+"px; top:"+y+"px;}<br>";
     } else
         e.style.display = 'none';
 
