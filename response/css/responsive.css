@@ -5,9 +5,14 @@
 		font-size: 200px;
 	}
 
+
+   
+    
+
+
 }
 
-@media(max-width: 991px) {
+@media(min-width: 768px) and (max-width: 1201px) {
 
 	.playroom {
 		font-size: 260px;
@@ -27,6 +32,35 @@
 	.project_description{
 		margin-top: 30px;
 	}
+
+ 	.sider_text .first_heading{
+		font-size: 80px;
+		line-height: 1em;
+		margin-bottom: 0;	
+		margin-top: 1em;	
+	}
+	.sider_text .second_heading{
+		font-size:80px;
+		line-height: 1em;
+		margin-bottom: 0;	
+		margin-top: 1em;	
+	}
+	.sider_text .third_heading{
+		font-size: 80px;
+		line-height: 1em;
+		margin-bottom: 0;	
+		margin-top: 1em;	
+	}
+	.sider_text .fourth_heading{
+		font-size: 80px;
+		line-height: 1em;
+		margin-bottom: 0;	
+		margin-top: 1em;	
+	}
+
+     	.sider_text p {
+		font-size: 1.5em;
+	}  
 	
 	
 
@@ -52,6 +86,35 @@
     	width:100%;
     	padding-left: 30px ;
     }
+    
+ 	.sider_text .first_heading{
+		font-size: 90px;
+		line-height: 1em;
+		margin-bottom: 0;	
+		margin-top: 1em;	
+	}
+	.sider_text .second_heading{
+		font-size:90px;
+		line-height: 1em;
+		margin-bottom: 0;	
+		margin-top: 1em;	
+	}
+	.sider_text .third_heading{
+		font-size: 90px;
+		line-height: 1em;
+		margin-bottom: 0;	
+		margin-top: 1em;	
+	}
+	.sider_text .fourth_heading{
+		font-size: 90px;
+		line-height: 1em;
+		margin-bottom: 0;	
+		margin-top: 1em;	
+	}
+   
+ 
+    
+    
 	.nivo-main-image {
 		display: block !important;
 		position: relative !important; 
@@ -89,16 +152,16 @@ padding-right:3em;
 	/* align middle on mobile | slider title */
 
 	.slide1{
-		text-align: left;
+		text-align: center;
 	}
 	.slide2{
-		text-align: left;
+		text-align: center;
 	}
 	.slide3{
-		text-align: left;
+		text-align: center;
 	}
 	.slide4{
-		text-align: left;
+		text-align: center;
 	}
 	.sider_text p {
 		font-family: "BitcountPropSingleRegularCircle";

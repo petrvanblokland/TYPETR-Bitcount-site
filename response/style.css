@@ -330,16 +330,16 @@ button:focus,
 }
 
 .slide1{
-	text-align: left;
+	text-align: center;
 }
 .slide2{
-	text-align: left;
+	text-align: center;
 }
 .slide3{
-	text-align: left;
+	text-align: center;
 }
 .slide4{
-	text-align: left;
+	text-align: center;
 }
 .sider_text {
 	height: 100%;
@@ -351,7 +351,7 @@ button:focus,
 	color: #fff;
 }
 .sider_text .home_heading{
-	font-size: 150px;
+	font-size: 170px;
 	font-weight: 700;
 	margin-bottom: 40px;
 	text-transform: None;
@@ -362,7 +362,7 @@ button:focus,
 	font-family: "BitcountMonoSingleRegularCircle";
 }
 .sider_text .first_heading{
-	font-size: 150px;
+	font-size: 170px;
 	font-weight: 700;
 	margin-bottom: 40px;
 	text-transform: None;
@@ -373,7 +373,7 @@ button:focus,
 	font-family: "BitcountMonoSingleRegularCircle";
 }
 .sider_text .second_heading{
-	font-size: 150px;
+	font-size: 170px;
 	font-weight: 700;
 	margin-bottom: 40px;
 	text-transform: None;
@@ -384,10 +384,10 @@ button:focus,
 	font-family: "BitcountGridSingleRegularCircle";
 }
 .sider_text .third_heading{
-	font-size: 150px;
+	font-size: 170px;
 	font-weight: 700;
 	text-transform: None;
-	line-height: 1.1em;
+	line-height: 120px;
 	font-family: "BitcountPropDoubleRegularCircle";
 } 
 .sider_text .third_sub_heading {
