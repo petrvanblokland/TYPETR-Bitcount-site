@@ -110,7 +110,9 @@ div#css_sample {
 	padding: 2px 2px 1px 3px;
 }
 #selectRoman, #selectItalic, #selectLayer1, #selectLayer2, #selectLayer3, #selectLayer4, 
-#selectShift, #selectNoShift, #selectOpacity, #selectNoOpacity {
+#selectShift, #selectNoShift, #selectOpacity, #selectNoOpacity, #selectCircle, #selectNoCircle,
+#selectOpenCircle, #selectNoOpenCircle, #selectSquare, #selectNoSquare, #selectOpenSquare,
+#selectNoOpenSquare, #selectPlus, #selectNoPlus {
 	border: none;
 	padding: 2px 2px 1px 3px;	
 }

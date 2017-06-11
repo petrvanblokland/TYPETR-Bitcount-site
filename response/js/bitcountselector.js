@@ -1,4 +1,19 @@
 
+
+var layerCnt = 4;
+var posture = 'italic'; /* Will toggle on init to roman. */
+var border = '1px solid #0000FF';
+var doShift = true;
+var doOpacity = true;
+/* Pixels type selection */
+var doSingle = true;
+var doDouble = true;
+var doCircle = true;
+var doOpenCircle = true;
+var doSquare = true;
+var doOpenSquare = true;
+var doPlus = true;
+
 function rgbToHex(r, g, b) {
     return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
 }
@@ -33,98 +48,173 @@ function getRandomColor() {
     return rgbToHex(Math.floor(color[0]*255), Math.floor(color[1]*255), Math.floor(color[2]*255));
 }
 
+function getFontNames(isForeGround){
+    var fontNames = [];
 
-var fontNamesDoubleBackground = [
-    'BitcountMonoDoubleRegularCircle',
-    'BitcountMonoDoubleRegularSquare',
+    if (!isForeGround){
+        if (doDouble){
+            if (doCircle){
+                fontNames.push('BitcountMonoDoubleRegularCircle');
+                fontNames.push('BitcountMonoDoubleMediumCircle');
+                fontNames.push('BitcountMonoDoubleBoldCircle');
+            }
+            if (doSquare){
+                fontNames.push('BitcountMonoDoubleRegularSquare');
+                fontNames.push('BitcountMonoDoubleMediumSquare');
+                fontNames.push('BitcountMonoDoubleBoldSquare');
+            }
+        }
+        if (doSingle){
+            if (doCircle){
+                fontNames.push('BitcountMonoSingleRegularCircle');
+                fontNames.push('BitcountMonoSingleMediumCircle');
+                fontNames.push('BitcountMonoSingleBoldCircle');
+            }
+            if (doSquare){
+                fontNames.push('BitcountMonoSingleRegularSquare');
+                fontNames.push('BitcountMonoSingleMediumSquare');
+                fontNames.push('BitcountMonoSingleBoldSquare');
+            }
+        }
+   }
+    if (doDouble){
+        if (doCircle){
+            fontNames.push('BitcountMonoDoubleLightCircle');
+            fontNames.push('BitcountMonoDoubleBookCircle');
+        }
+        if (doOpenCircle){
+            fontNames.push('BitcountMonoDoubleLightLineCircle');
+            fontNames.push('BitcountMonoDoubleBookLineCircle');
+            fontNames.push('BitcountMonoDoubleRegularLineCircle');
+            fontNames.push('BitcountMonoDoubleMediumLineCircle');
+            fontNames.push('BitcountMonoDoubleBoldLineCircle');
+        }
+        if (doSquare){
+            fontNames.push('BitcountMonoDoubleLightSquare');
+            fontNames.push('BitcountMonoDoubleBookSquare');
+        }
+        if (doOpenSquare){
+            fontNames.push('BitcountMonoDoubleLightLineSquare');
+            fontNames.push('BitcountMonoDoubleBookLineSquare');
+            fontNames.push('BitcountMonoDoubleRegularLineSquare');
+            fontNames.push('BitcountMonoDoubleMediumLineSquare');
+            fontNames.push('BitcountMonoDoubleBoldLineSquare');
+        }
+        if (doPlus){
+            fontNames.push('BitcountMonoDoubleLightPlus');
+            fontNames.push('BitcountMonoDoubleBookPlus');
+            fontNames.push('BitcountMonoDoubleRegularPlus');
+            fontNames.push('BitcountMonoDoubleMediumPlus');
+            fontNames.push('BitcountMonoDoubleBoldPlus');
+        }
+    }
+    if (doSingle){
+        if (doCircle){
+            fontNames.push('BitcountMonoSingleLightCircle');
+            fontNames.push('BitcountMonoSingleBookCircle');
+        }
+        if (doOpenCircle){
+            fontNames.push('BitcountMonoSingleLightLineCircle');
+            fontNames.push('BitcountMonoSingleBookLineCircle');
+            fontNames.push('BitcountMonoSingleRegularLineCircle');
+            fontNames.push('BitcountMonoSingleMediumLineCircle');
+            fontNames.push('BitcountMonoSingleBoldLineCircle');
+        }
+        if (doCircle){
+            fontNames.push('BitcountMonoSingleLightSquare');
+            fontNames.push('BitcountMonoSingleBookSquare');
+        }
+        if (doOpenSquare){
+            fontNames.push('BitcountMonoSingleLightLineSquare');
+            fontNames.push('BitcountMonoSingleBookLineSquare');
+            fontNames.push('BitcountMonoSingleRegularLineSquare');
+            fontNames.push('BitcountMonoSingleMediumLineSquare');
+            fontNames.push('BitcountMonoSingleBoldLineSquare');
+        }
+        if (doPlus){
+            fontNames.push('BitcountMonoSingleLightPlus');
+            fontNames.push('BitcountMonoSingleBookPlus');
+            fontNames.push('BitcountMonoSingleRegularPlus');
+            fontNames.push('BitcountMonoSingleMediumPlus');
+            fontNames.push('BitcountMonoSingleBoldPlus');
+        }
+    }
+    /* Nothing selected, then select default. */
+    if (fontNames.length == 0)
+        fontNames.push('BitcountMonoDoubleRegularCircle');
 
-    'BitcountMonoDoubleMediumCircle',
-    'BitcountMonoDoubleMediumSquare',
+    return fontNames;
+}
+function selectCircle(flag){
+    if (flag == -1)
+        flag = !doCircle;
+    doCircle = flag;
+    if (doCircle){
+        document.getElementById('selectCircle').style['border'] = border;
+        document.getElementById('selectNoCircle').style['border'] = 'none';
+    } else {        
+        document.getElementById('selectCircle').style['border'] = 'none';
+        document.getElementById('selectNoCircle').style['border'] = border;
+    }
+    makeNewLayers();
+}
 
-    'BitcountMonoDoubleBoldCircle',
-    'BitcountMonoDoubleBoldSquare'
-];
-var fontNamesDoubleForground = [
-    'BitcountMonoDoubleLightCircle',
-    'BitcountMonoDoubleLightSquare',
-    'BitcountMonoDoubleLightPlus',
+function selectOpenCircle(flag){
+    if (flag == -1)
+        flag = !doOpenCircle;
+    doOpenCircle = flag;
+    if (doOpenCircle){
+        document.getElementById('selectOpenCircle').style['border'] = border;
+        document.getElementById('selectNoOpenCircle').style['border'] = 'none';
+    } else {        
+        document.getElementById('selectOpenCircle').style['border'] = 'none';
+        document.getElementById('selectNoOpenCircle').style['border'] = border;
+    }
+    makeNewLayers();
+}
 
-    'BitcountMonoDoubleBookCircle',
-    'BitcountMonoDoubleBookSquare',
-    'BitcountMonoDoubleBookPlus',
+function selectSquare(flag){
+    if (flag == -1)
+        flag = !doSquare;
+    doSquare = flag;
+    if (doSquare){
+        document.getElementById('selectSquare').style['border'] = border;
+        document.getElementById('selectNoSquare').style['border'] = 'none';
+    } else {        
+        document.getElementById('selectSquare').style['border'] = 'none';
+        document.getElementById('selectNoSquare').style['border'] = border;
+    }
+    makeNewLayers();
+}
 
-    'BitcountMonoDoubleRegularPlus',
-    'BitcountMonoDoubleMediumPlus',
-    'BitcountMonoDoubleBoldPlus',
+function selectOpenSquare(flag){
+   if (flag == -1)
+        flag = !doOpenSquare;
+    doOpenSquare = flag;
+    if (doOpenSquare){
+        document.getElementById('selectOpenSquare').style['border'] = border;
+        document.getElementById('selectNoOpenSquare').style['border'] = 'none';
+    } else {        
+        document.getElementById('selectOpenSquare').style['border'] = 'none';
+        document.getElementById('selectNoOpenSquare').style['border'] = border;
+    }
+    makeNewLayers();
+}
 
-    /* Line */
-    'BitcountMonoDoubleLightLineCircle',
-    'BitcountMonoDoubleLightLineSquare',
+function selectPlus(flag){
+    if (flag == -1)
+        flag = !doPlus;
+    doPlus = flag;
+    if (doPlus){
+        document.getElementById('selectPlus').style['border'] = border;
+        document.getElementById('selectNoPlus').style['border'] = 'none';
+    } else {        
+        document.getElementById('selectPlus').style['border'] = 'none';
+        document.getElementById('selectNoPlus').style['border'] = border;
+    }
+    makeNewLayers();
+}
 
-    'BitcountMonoDoubleBookLineCircle',
-    'BitcountMonoDoubleBookLineSquare',
-
-    'BitcountMonoDoubleRegularLineCircle',
-    'BitcountMonoDoubleRegularLineSquare',
-
-    'BitcountMonoDoubleMediumLineCircle',
-    'BitcountMonoDoubleMediumLineSquare',
-
-    'BitcountMonoDoubleBoldLineCircle',
-    'BitcountMonoDoubleBoldLineSquare'
-];
-var fontNamesDouble = [].concat(fontNamesDoubleBackground, fontNamesDoubleForground);
-
-var fontNamesSingleBackground = [
-    'BitcountMonoSingleRegularCircle',
-    'BitcountMonoSingleRegularSquare',
-
-    'BitcountMonoSingleMediumCircle',
-    'BitcountMonoSingleMediumSquare',
-
-    'BitcountMonoSingleBoldCircle',
-    'BitcountMonoSingleBoldSquare'
-];
-var fontNamesSingleForground = [
-    'BitcountMonoSingleLightCircle',
-    'BitcountMonoSingleLightSquare',
-    'BitcountMonoSingleLightPlus',
-
-    'BitcountMonoSingleBookCircle',
-    'BitcountMonoSingleBookSquare',
-    'BitcountMonoSingleBookPlus',
-
-    'BitcountMonoSingleRegularPlus',
-    'BitcountMonoSingleMediumPlus',
-    'BitcountMonoSingleBoldPlus',
-
-    /* Line */
-    'BitcountMonoSingleLightLineCircle',
-    'BitcountMonoSingleLightLineSquare',
-
-    'BitcountMonoSingleBookLineCircle',
-    'BitcountMonoSingleBookLineSquare',
-
-    'BitcountMonoSingleRegularLineCircle',
-    'BitcountMonoSingleRegularLineSquare',
-
-    'BitcountMonoSingleMediumLineCircle',
-    'BitcountMonoSingleMediumLineSquare',
-
-    'BitcountMonoSingleBoldLineCircle',
-    'BitcountMonoSingleBoldLineSquare'
-];
-var fontNamesSingle = [].concat(fontNamesSingleBackground, fontNamesSingleForground);
-
-var fontNames = fontNamesDouble;
-var fontNamesForground = fontNamesDoubleForground;
-
-var layerCnt = 4;
-var stemType = 'double';
-var posture = 'italic'; /* Will toggle on init to roman. */
-var border = '1px solid #0000FF';
-var doShift = true;
-var doOpacity = true;
 
 function selectShift(flag){
     if (flag == -1)
@@ -177,31 +267,31 @@ mq.addListener(function(changed) {
 
 function selectStem(selectedStemType){
     if (selectedStemType == 'toggle'){
-        if (stemType == 'single')
-            selectedStemType = 'double';
-        else if (stemType == 'double')
-            selectedStemType = 'mix';
-        else 
-            selectedStemType = 'single';
-    }
-    if (selectedStemType == 'single'){
-        fontNames = fontNamesSingle;
-        fontNamesForground = fontNamesSingleForground;
-        document.getElementById('selectSingle').style['border'] = border;
-        document.getElementById('selectDouble').style['border'] = 'none';
-        document.getElementById('selectMix').style['border'] = 'none';
+        doSingle = !doSingle;
+        doDouble = !doDouble;
+    } else if (selectedStemType == 'single'){
+        doSingle = true;
+        doDouble = false;
     } else if (selectedStemType == 'double'){
-        fontNames = fontNamesDouble;
-        fontNamesForground = fontNamesDoubleForground;
-        document.getElementById('selectSingle').style['border'] = 'none';
-        document.getElementById('selectDouble').style['border'] = border;
-        document.getElementById('selectMix').style['border'] = 'none';
-    } else { /* selectedStemType == 'mix' */
-        fontNames = [].concat(fontNamesSingle, fontNamesDouble);
-        fontNamesForground = [].concat(fontNamesSingleForground, fontNamesDoubleForground);
-        document.getElementById('selectSingle').style['border'] = 'none';
+        doSingle = false;
+        doDouble = true;
+    } else { /* Mixes */
+        doSingle = doDouble = true;
+    }
+    if (!(doSingle || doDouble))
+        doSingle = true;
+    if (doSingle && doDouble){
         document.getElementById('selectDouble').style['border'] = 'none';
+        document.getElementById('selectSingle').style['border'] = 'none';
         document.getElementById('selectMix').style['border'] = border;
+    } else if (doSingle){
+        document.getElementById('selectDouble').style['border'] = 'none';
+        document.getElementById('selectSingle').style['border'] = border;
+        document.getElementById('selectMix').style['border'] = 'none';
+    } else { /* doDouble */
+        document.getElementById('selectDouble').style['border'] = border;
+        document.getElementById('selectSingle').style['border'] = 'none';
+        document.getElementById('selectMix').style['border'] = 'none';
     }
     stemType = selectedStemType;
     makeNewLayers();
@@ -231,9 +321,13 @@ function toggleRomanItalic(){
     makeNewLayers();
 }
 function makeNewLayers(){
+
+    var fontNamesForeground = getFontNames(true);
+    var fontNames = getFontNames(false);
+
     var css;
-    var randomNumber1 = Math.floor(Math.random()*fontNamesForground.length);
-    var randomNumber2 = Math.floor(Math.random()*fontNamesForground.length);
+    var randomNumber1 = Math.floor(Math.random()*fontNamesForeground.length);
+    var randomNumber2 = Math.floor(Math.random()*fontNamesForeground.length);
     var randomNumber3 = Math.floor(Math.random()*fontNames.length);
     var randomNumber4 = Math.floor(Math.random()*fontNames.length);
 
@@ -251,7 +345,7 @@ function makeNewLayers(){
     if (doOpacity)
         o = getRandomOpacity(0.8).toFixed(2);
     e.style.opacity = o;
-    e.style.fontFamily = f = fontNamesForground[randomNumber1];
+    e.style.fontFamily = f = fontNamesForeground[randomNumber1];
     e.style.fontStyle = posture;
     if (doShift){
         x = shifts[Math.floor(Math.random()*shifts.length)];
@@ -266,7 +360,7 @@ function makeNewLayers(){
     if (doOpacity)
         o = getRandomOpacity(0.8).toFixed(2);
     e.style.opacity = o;
-    e.style.fontFamily = f = fontNamesForground[randomNumber2];
+    e.style.fontFamily = f = fontNamesForeground[randomNumber2];
     e.style.fontStyle = posture;
     if (layerCnt >= 2){
         if (doShift){
@@ -324,6 +418,11 @@ function makeNewLayers(){
 
 useShortSample($(window).width() < 991);
 toggleRomanItalic();
+selectCircle(true);
+selectOpenCircle(true);
+selectSquare(true);
+selectOpenSquare(true);
+selectPlus(true);
 selectOpacity(true);
 selectShift(true);
 selectStem('double');
