@@ -66,6 +66,25 @@
 		background:#000;
 	}
 
+#main_nav li a{
+	padding: 12px 9px;
+
+}
+
+a.nivo-prevNav{
+	margin-left:10px;
+
+}
+a.nivo-nextNav{
+	margin-right:10px;
+
+
+}
+
+.slider-text{
+padding-left:4em;
+padding-right:3em;
+}
 
 	/* align middle on mobile | slider title */
 
