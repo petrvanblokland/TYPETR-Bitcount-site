@@ -10,15 +10,21 @@
 /*  R E G U L A R  */
 
 @font-face {
-  font-family: 'BitcountMonoSingleRegularCircle';
-  src: url('../fontsfull/Bitcount_Mono_Single-Circle.ttf');
+  font-family: 'BitcountMonoDoubleRegularCircle';
+  src: url('../fontsfull/Bitcount_Mono_Double-Circle.ttf');
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'BitcountMonoDoubleRegularCircle';
-  src: url('../fontsfull/Bitcount_Mono_Double-Circle.ttf');
+  src: url('../fontsfull/Bitcount_Mono_Double-Circle_Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BitcountMonoSingleRegularCircle';
+  src: url('../fontsfull/Bitcount_Mono_Single-Circle.ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -203,14 +209,14 @@
   src: url('../fonts/Bitcount_Mono_Double-Circle_Subset.ttf');
   font-weight: normal;
   font-style: normal;
-}*/
+}
 @font-face {
   font-family: 'BitcountMonoDoubleRegularCircle';
   src: url('../fonts/Bitcount_Mono_Double-Circle_Italic_Subset.ttf');
   font-weight: normal;
   font-style: italic;
 }
-
+*/
 
 @font-face {
   font-family: 'BitcountMonoDoubleRegularSquare';
