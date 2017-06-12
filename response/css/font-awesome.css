@@ -197,13 +197,13 @@
 
 
 /*  R E G U L A R  */
-
+/*  Available as full font 
 @font-face {
   font-family: 'BitcountMonoDoubleRegularCircle';
   src: url('../fonts/Bitcount_Mono_Double-Circle_Subset.ttf');
   font-weight: normal;
   font-style: normal;
-}
+}*/
 @font-face {
   font-family: 'BitcountMonoDoubleRegularCircle';
   src: url('../fonts/Bitcount_Mono_Double-Circle_Italic_Subset.ttf');
@@ -558,13 +558,14 @@
 
 
 /*  R E G U L A R  */
-
+/* Available as full font
 @font-face {
   font-family: 'BitcountMonoSingleRegularCircle';
   src: url('../fonts/Bitcount_Mono_Single-Circle_Subset.ttf');
   font-weight: normal;
   font-style: normal;
 }
+*/
 @font-face {
   font-family: 'BitcountMonoSingleRegularCircle';
   src: url('../fonts/Bitcount_Mono_Single-Circle_Italic_Subset.ttf');
