@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6{
 	color: #333;
 	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
 	margin: 0 0 15px;	
-	font-weight: 700;
+	/*font-weight: 700;*/
 	line-height: normal;
 }
 
@@ -33,7 +33,7 @@ h3 {
 	/*font-family: "BitcountPropDoubleRegularCircle",sans-serif;*/
 	margin: 0 0 15px;
 	font-size: 22px;
-	font-weight: 700;
+	/*font-weight: 700;*/
 	line-height: normal;
 }
 
@@ -43,7 +43,7 @@ h1 {
 	/*font-family: "BitcountPropDoubleRegularCircle",sans-serif;*/
 	margin: 0 0 15px;
 	font-size: 52px;
-	font-weight: 700;
+	/*font-weight: 700;*/
 	line-height: normal;
 }
 
@@ -214,10 +214,10 @@ button:focus,
 	color: #fff;
 	font-family: "BitcountMonoSingleRegularCircle",sans-serif;
 	font-size: 20px;
-	font-weight: 500;
+	/*font-weight: 500;*/
 	padding: 3px 9px;
 	text-transform: uppercase;
-	font-weight: 700;
+	/*font-weight: 700;*/
 	text-align:center;
 }
 #main_nav li a:hover, #main_nav li a:focus, #main_nav li.current a{
@@ -294,7 +294,7 @@ button:focus,
 	cursor: pointer;
 	display: block;
 	padding: 13px 10px;
-	font-weight: 400;
+	/*font-weight: 400;*/
 	text-transform: none;
 	font-size: 13px;
 }
@@ -354,7 +354,7 @@ button:focus,
 }
 .sider_text .home_heading{
 	font-size: 170px;
-	font-weight: 700;
+	/*font-weight: 700;*/
 	margin-bottom: 40px;
 	text-transform: None;
 	line-height: 120px;
@@ -365,7 +365,7 @@ button:focus,
 }
 .sider_text .first_heading{
 	font-size: 170px;
-	font-weight: 700;
+	/*font-weight: 700;*/
 	margin-bottom: 40px;
 	text-transform: None;
 	line-height: 120px;
@@ -376,7 +376,7 @@ button:focus,
 }
 .sider_text .second_heading{
 	font-size: 170px;
-	font-weight: 700;
+	/*font-weight: 700;*/
 	margin-bottom: 40px;
 	text-transform: None;
 	line-height: 120px;
@@ -387,7 +387,7 @@ button:focus,
 }
 .sider_text .third_heading{
 	font-size: 170px;
-	font-weight: 700;
+	/*font-weight: 700;*/
 	text-transform: None;
 	line-height: 120px;
 	font-family: "BitcountPropDoubleRegularCircle";
@@ -408,6 +408,7 @@ button:focus,
 	-ms-font-feature-settings:"ss01", "ss02", "ss03";
 	-webkit-font-feature-settings:"ss01", "ss02", "ss03";
 	font-feature-settings:"ss01", "ss02", "ss03";
+	letter-spacing: 0.04em;
 }
 .sider_text > .btn_wrap{
 	margin-top: 40px;
@@ -417,7 +418,7 @@ button:focus,
 	border-radius: 2%;
 	color: #fff;
 	font-size: 20px;
-	font-weight: 600;
+	/*font-weight: 600;*/
 	padding: 13px 18px;
 	/*text-transform: uppercase;*/
 	transition: all 0.5s ease 0s;
@@ -449,9 +450,17 @@ button:focus,
 	line-height:17px;
 }
 a.nivo-prevNav{
+	font-family: "BitcountMonoSingleRegularCircle";
+	font-size: 2em;
+	padding-left: 0;
+	letter-spacing: -0.35em;
 	margin-left:20px;
 }
 a.nivo-nextNav{
+	font-family: "BitcountMonoSingleRegularCircle";
+	font-size: 2em;
+	letter-spacing: -0.35em;
+	padding-left: 0;
 	margin-right:20px;
 }
 .nivo-controlNav {
@@ -951,7 +960,7 @@ a.nivo-nextNav{
   transform: translateX(-50%);
 }
 .chart-item h4 {
-  font-weight: 500;
+  /*font-weight: 500;*/
   margin-top: 25px;
 }
 .chart-item p {
@@ -996,7 +1005,7 @@ a.nivo-nextNav{
 .chart-three .elements .percent {
   display: inline-block;
   font-size: 24px;
-  font-weight: 700;
+  /*font-weight: 700;*/
   width: auto;
 }
 .chart-three .elements h4 {
@@ -1073,7 +1082,7 @@ a.nivo-nextNav{
 	margin-top: 15px;
 	margin-bottom: 15px;
 	color: #fff;
-	font-weight: 300;
+	/*font-weight: 300;*/
 }
 h1.diap {color: #fff;}
 .counter_area strong{
@@ -1103,14 +1112,14 @@ h1.diap {color: #fff;}
 }
 .single_pricing .plan_name{
 	text-transform: None;
-	font-weight: 500;
+	/*font-weight: 500;*/
 	font-size:1.6em;
 	letter-spacing:0.05em;
 	line-height: 30px;
 }
 .single_pricing .price{
 	position: relative;
-	font-weight: 700;
+	/*font-weight: 700;*/
 	color: #000;
 }
 .single_pricing .currency{
@@ -1127,7 +1136,7 @@ h1.diap {color: #fff;}
 }
 .single_pricing .period{
 	color: #222;
-	font-weight: 600;
+	/*font-weight: 600;*/
 	padding-top: 10px;
 }
 .single_pricing .pri_list{
@@ -1138,7 +1147,7 @@ h1.diap {color: #fff;}
 .single_pricing .pri_list li{
 	border-bottom: 1px solid #eee;
 	padding: 8px;
-	font-weight: 400;
+	/*font-weight: 400;*/
 }
 
 .single_pricing.feature .header,
@@ -1189,7 +1198,7 @@ h1.diap {color: #fff;}
 	cursor: pointer;
 	display: inline-block;
 	font-size: 14px;
-	font-weight: 400;
+	/*font-weight: 400;*/
 	letter-spacing: 1px;
 	margin: 0 5px 13px;
 	padding: 9px 19px;
@@ -1242,7 +1251,7 @@ h1.diap {color: #fff;}
 .sing_work_text_link h4{
 	color: #fff;
 	font-size: 15px;
-	font-weight: 600;
+	/*font-weight: 600;*/
 	/*text-transform: uppercase;*/
 }
 .single_gallery:hover .sing_work_text_link h4{
@@ -1300,7 +1309,7 @@ h1.diap {color: #fff;}
 }
 .why_choice_area .single_about h4{
 	color: #167FFF;
-	font-weight: 400;
+	/*font-weight: 400;*/
 	font-size: 21px;
 }
 .single_about i.fa{
@@ -1451,7 +1460,7 @@ h1.diap {color: #fff;}
 .contact_us_area label{
 	cursor: pointer;
 	font-size: 15px;
-	font-weight: 600;
+	/*font-weight: 600;*/
 	margin-bottom: 10px;
 	/*text-transform: uppercase;*/
 }
@@ -1587,7 +1596,7 @@ ul.footer_social_link li a i{
 .portfolio_details_area h2{
 	border-bottom: 1px solid #167FFF;
 	display: inline-block;
-	font-weight: 300;
+	/*font-weight: 300;*/
 	padding-bottom: 10px;
 }
 .project_description ul{

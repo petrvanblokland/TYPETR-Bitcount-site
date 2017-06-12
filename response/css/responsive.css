@@ -15,7 +15,7 @@
 @media(min-width: 768px) and (max-width: 1201px) {
 
 	.playroom {
-		font-size: 260px;
+		font-size: 200px;
 		height: 220px;
 	}
     #player1, #player2, #player3, #player4 {
