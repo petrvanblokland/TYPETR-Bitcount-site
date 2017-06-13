@@ -46,7 +46,9 @@ h1 {
 	/*font-weight: 700;*/
 	line-height: normal;
 }
-
+p b {
+	font-family: "BitcountMonoDoubleRegularCircle",sans-serif;
+}
 .bitcountgrid {
 	font-family: "BitcountGridDoubleRegularCircle",sans-serif;
 }
