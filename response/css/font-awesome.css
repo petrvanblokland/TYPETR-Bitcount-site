@@ -811,8 +811,11 @@
   font-style: normal;
 }
 
+
+/* voor nu even op Display:None gezet om de verdubbeling van de links/rechts slider pijltjes op te heffen */
+
 .fa {
-  display: inline-block;
+  display: None;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
