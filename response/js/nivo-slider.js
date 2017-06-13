@@ -94,7 +94,7 @@
             }, r.pauseTime)
         }
         if (r.directionNav) {
-            s.append('<div class="nivo-directionNav"><a class="nivo-prevNav">&lt;--&nbsp;' + r.prevText + '</a><a class="nivo-nextNav">--&gt;&nbsp;' + r.nextText + "</a></div>");
+            s.append('<div class="nivo-directionNav"><a class="nivo-prevNav">&lt;--&nbsp;</a><a class="nivo-nextNav">--&gt;&nbsp;</a></div>');
             e(s).on("click", "a.nivo-prevNav", function() {
                 if (i.running) {
                     return false
